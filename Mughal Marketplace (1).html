@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eaf2df"><meta name="description" content="Mughal Marketplace — discover and list pre-loved items in Lahore, Pakistan.">
+<title>Mughal Marketplace | Lahore's pre-loved marketplace</title>
+<style>
+:root{--cream:#fbfcf7;--butter:#edf3df;--sage:#d8e7ca;--green:#315c3e;--deep:#1f3d2a;--ink:#233329;--muted:#69766c;--line:#dce5d7;--white:#fff;--gold:#e7bd64;--shadow:0 12px 35px #213e2a12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-decoration:none}.container{max-width:1160px;margin:auto;padding:0 22px}.announce{background:var(--deep);color:#f7f9f1;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.2px}.header{background:#fbfcf7ee;backdrop-filter:blur(12px);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;gap:22px}.brand{display:flex;align-items:center;gap:10px;min-width:210px}.brandmark{width:44px;height:44px;border-radius:15px;background:var(--green);display:grid;place-items:center;color:white;font-weight:900;font-size:18px;box-shadow:0 5px 12px #315c3e25}.brandname{font-size:17px;font-weight:850;letter-spacing:-.5px}.brandtag{font-size:10px;color:var(--muted);margin-top:2px}.navlinks{display:flex;align-items:center;gap:23px;font-size:13px;color:#526357;flex:1}.navlinks a:hover{color:var(--green)}.navactions{display:flex;align-items:center;gap:9px}.lang,.iconbtn,.primary,.secondary{border:1px solid var(--line);border-radius:12px;padding:10px 13px;background:white;color:var(--ink);font-weight:700;font-size:12px}.primary{background:var(--green);color:white;border-color:var(--green);padding:12px 16px;box-shadow:0 5px 12px #315c3e1a}.primary:hover{background:var(--deep)}.secondary:hover,.lang:hover{background:var(--butter)}.menuBtn{display:none}.hero{padding:42px 0 30px}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--butter);color:var(--green);border:1px solid var(--line);border-radius:30px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.3px}.dot{width:7px;height:7px;background:#5f925c;border-radius:50%}h1{font-size:clamp(38px,5.5vw,65px);line-height:1.03;letter-spacing:-2.6px;margin:18px 0 17px;max-width:650px}h1 em{font-style:normal;color:var(--green)}.hero p{font-size:15px;line-height:1.8;color:var(--muted);max-width:530px;margin:0 0 24px}.heroBtns{display:flex;gap:10px;flex-wrap:wrap}.trustrow{display:flex;gap:18px;flex-wrap:wrap;margin-top:27px;color:var(--muted);font-size:11px}.trustrow span{display:flex;align-items:center;gap:7px}.trustrow b{color:var(--green)}.heroVisual{position:relative;min-height:365px;border-radius:28px;background:linear-gradient(145deg,#edf3df,#d7e7c9);overflow:hidden;padding:22px;display:flex;align-items:center;justify-content:center}.heroVisual:before,.heroVisual:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff85}.heroVisual:before{width:340px;height:340px;right:-80px;top:-100px}.heroVisual:after{width:240px;height:240px;left:-80px;bottom:-100px}.visualCard{position:relative;z-index:1;background:#ffffffd9;backdrop-filter:blur(8px);border:1px solid #ffffff;border-radius:22px;padding:18px;width:min(100%,365px);box-shadow:0 18px 45px #25462a1c;transform:rotate(-2deg)}.visualTop{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);margin-bottom:14px}.livepill{background:#e1f0da;color:var(--green);border-radius:20px;padding:6px 9px;font-weight:800}.visualItem{display:grid;grid-template-columns:104px 1fr;gap:14px;align-items:center}.visualPic{height:112px;border-radius:16px;background:linear-gradient(135deg,#f5e8ce,#d5b78b);display:grid;place-items:center;font-size:55px}.visualItem h3{margin:0 0 6px;font-size:16px}.visualItem p{margin:0 0 8px;font-size:11px;line-height:1.5}.price{font-weight:900;color:var(--green);font-size:18px}.visualFoot{border-top:1px solid var(--line);padding-top:12px;margin-top:15px;display:flex;justify-content:space-between;color:var(--muted);font-size:10px}.floatNote{position:absolute;z-index:2;background:white;border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);font-size:11px;font-weight:800}.floatNote small{display:block;color:var(--muted);font-weight:500;margin-top:3px}.note1{left:9px;bottom:30px}.note2{right:5px;top:28px}.searchPanel{margin-top:14px;background:white;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:12px;display:grid;grid-template-columns:1fr 190px auto;gap:10px}.fieldwrap{display:flex;align-items:center;gap:10px;padding:0 12px;min-height:45px;border:1px solid var(--line);border-radius:12px;background:#fff}.fieldwrap span{font-size:17px;color:var(--muted)}.fieldwrap input,.fieldwrap select{border:0;outline:0;background:transparent;width:100%;min-width:0;color:var(--ink);font-size:13px}.section{padding:48px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:23px}.kicker{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:var(--green);font-weight:900}.section h2{font-size:clamp(26px,3vw,36px);letter-spacing:-1px;margin:8px 0 0}.sub{font-size:13px;color:var(--muted);line-height:1.7;margin:8px 0 0}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:white;border:1px solid var(--line);border-radius:17px;padding:18px 10px;text-align:center;transition:.2s;cursor:pointer}.cat:hover,.cat.active{background:var(--butter);border-color:#a9c49b;transform:translateY(-2px)}.catIcon{width:52px;height:52px;margin:0 auto 10px;background:var(--butter);border-radius:16px;display:grid;place-items:center;font-size:25px}.cat strong{font-size:12px;display:block}.cat small{font-size:10px;color:var(--muted);display:block;margin-top:4px}.productTools{display:flex;gap:8px;align-items:center}.productTools select{border:1px solid var(--line);border-radius:10px;padding:10px;background:white;color:var(--ink);font-size:12px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s;min-width:0}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.productPhoto{height:190px;position:relative;display:grid;place-items:center;font-size:65px;background:linear-gradient(135deg,#f2f0e5,#e2e9d7)}.productPhoto .tag{position:absolute;top:12px;left:12px;background:#ffffffeb;border-radius:8px;padding:6px 8px;font-size:9px;font-weight:850;color:var(--green)}.heart{position:absolute;right:10px;top:10px;border:0;border-radius:50%;height:31px;width:31px;background:#ffffffeb;font-size:16px;color:#526357}.heart.saved{color:#b44747}.productBody{padding:14px}.prodMeta{display:flex;justify-content:space-between;gap:6px;color:var(--muted);font-size:10px;margin-bottom:8px}.product h3{font-size:14px;margin:0 0 7px;line-height:1.35}.product .desc{font-size:11px;color:var(--muted);line-height:1.55;min-height:34px;margin:0 0 12px}.prodBottom{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #edf0e8;padding-top:11px}.prodPrice{font-size:17px;font-weight:900;color:var(--green)}.smallBtn{border:1px solid var(--line);background:white;border-radius:10px;padding:8px 10px;font-size:10px;font-weight:800}.empty{display:none;padding:32px;text-align:center;border:1px dashed var(--line);border-radius:16px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.stepNum{width:40px;height:40px;background:var(--butter);border-radius:13px;display:grid;place-items:center;font-weight:900;color:var(--green);margin-bottom:15px}.step h3{font-size:15px;margin:0 0 8px}.step p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.sellBanner{background:var(--deep);color:white;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.sellBanner h2{margin:0 0 8px;font-size:28px;letter-spacing:-.7px}.sellBanner p{margin:0;color:#d4e1d1;font-size:13px;line-height:1.7;max-width:600px}.sellBanner .primary{background:#eaf2df;color:var(--deep);border-color:#eaf2df;white-space:nowrap}.infoGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.infoCard{border:1px solid var(--line);border-radius:18px;padding:22px;background:white}.infoCard h3{margin:0 0 12px;font-size:16px}.infoCard p,.infoCard li{font-size:12px;line-height:1.8;color:var(--muted)}.infoCard ul{padding-left:18px;margin:0}.faq details{border-bottom:1px solid var(--line);padding:16px 0}.faq summary{font-weight:800;font-size:13px;cursor:pointer}.faq details p{font-size:12px;color:var(--muted);line-height:1.8}.footer{background:#f0f4e9;border-top:1px solid var(--line);padding:35px 0 18px}.footerGrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer p,.footer a{font-size:12px;line-height:1.8;color:var(--muted)}.footer h4{margin:0 0 10px;font-size:12px}.footerLinks{display:grid;gap:6px}.copyright{border-top:1px solid var(--line);margin-top:24px;padding-top:15px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px}.modalBackdrop{position:fixed;inset:0;background:#14231bcc;z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.modalBackdrop.show{display:flex}.modal{background:var(--cream);border-radius:22px;padding:24px;width:min(100%,560px);max-height:92vh;overflow:auto;box-shadow:0 30px 90px #0004}.modalHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modalHead h2{font-size:22px;margin:0}.close{border:1px solid var(--line);background:white;border-radius:10px;width:35px;height:35px;font-size:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formfield{display:grid;gap:6px}.formfield.full{grid-column:1/-1}.formfield label{font-size:11px;font-weight:800}.formfield input,.formfield select,.formfield textarea{border:1px solid var(--line);border-radius:11px;background:white;padding:11px;outline-color:#9fbd8e;width:100%;font-size:12px}.formfield textarea{min-height:85px;resize:vertical}.notice{background:var(--butter);border-radius:12px;padding:12px;font-size:11px;line-height:1.6;color:#53644f;margin:12px 0}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,120px);transition:.25s;background:var(--deep);color:white;border-radius:12px;padding:12px 16px;z-index:80;font-size:12px;box-shadow:var(--shadow);max-width:90vw}.toast.show{transform:translate(-50%,0)}.mobileBar{display:none}
+[dir=rtl] body{text-align:right}[dir=rtl] .navlinks{direction:rtl}[dir=rtl] .sectionHead,[dir=rtl] .prodMeta,[dir=rtl] .prodBottom{direction:rtl}[dir=rtl] .productPhoto .tag{left:auto;right:12px}[dir=rtl] .heart{right:auto;left:10px}[dir=rtl] .infoCard ul{padding-left:0;padding-right:18px}
+@media(max-width:900px){.navlinks{display:none}.menuBtn{display:block}.heroGrid{grid-template-columns:1fr}.heroVisual{min-height:320px}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.productPhoto{height:170px}.searchPanel{grid-template-columns:1fr 150px}.searchPanel .primary{grid-column:1/-1}.footerGrid{grid-template-columns:1fr 1fr}.footerGrid>div:first-child{grid-column:1/-1}}
+@media(max-width:560px){.container{padding:0 15px}.nav{height:68px;gap:8px}.brand{min-width:0;flex:1}.brandname{font-size:14px}.brandtag{font-size:9px}.brandmark{width:39px;height:39px}.navactions{gap:5px}.navactions .primary{display:none}.lang,.iconbtn{padding:9px 10px}.hero{padding-top:28px}.heroGrid{gap:20px}h1{letter-spacing:-1.8px}.hero p{font-size:13px}.heroVisual{min-height:285px;padding:13px}.visualCard{padding:13px}.visualItem{grid-template-columns:85px 1fr;gap:10px}.visualPic{height:95px;font-size:45px}.note1{bottom:10px}.note2{top:10px}.searchPanel{grid-template-columns:1fr;padding:9px}.searchPanel .fieldwrap{min-height:43px}.searchPanel .primary{grid-column:auto}.section{padding:35px 0}.sectionHead{align-items:start;flex-direction:column}.categories{gap:8px}.cat{padding:12px 6px;border-radius:13px}.catIcon{height:42px;width:42px;font-size:21px}.cat strong{font-size:10px}.cat small{font-size:9px}.products{gap:10px}.productPhoto{height:140px;font-size:52px}.productBody{padding:10px}.product h3{font-size:12px}.product .desc{font-size:10px;min-height:45px}.prodPrice{font-size:14px}.smallBtn{padding:7px;font-size:9px}.steps{grid-template-columns:1fr}.sellBanner{grid-template-columns:1fr;padding:22px}.sellBanner h2{font-size:23px}.infoGrid{grid-template-columns:1fr}.footerGrid{grid-template-columns:1fr}.footerGrid>div:first-child{grid-column:auto}.copyright{flex-direction:column}.formgrid{grid-template-columns:1fr}.formfield.full{grid-column:auto}.mobileBar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fffef9f2;backdrop-filter:blur(12px);border-top:1px solid var(--line);z-index:30;padding:8px 12px;justify-content:space-around}.mobileBar a,.mobileBar button{border:0;background:transparent;display:grid;justify-items:center;gap:3px;font-size:9px;color:var(--muted)}.mobileBar span{font-size:18px}.footer{padding-bottom:75px}}
+
+/* Enhancements: clearer cards, listing controls and image previews */
+.productPhoto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.productPhoto .fallbackEmoji{position:relative;z-index:0}
+.productPhoto .tag,.productPhoto .heart{z-index:2}
+.listingActions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+.listingActions button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 8px;font-size:10px;font-weight:800}
+.listingCount{font-size:11px;color:var(--muted);margin-top:10px}
+@media(max-width:560px){.listingActions button{font-size:9px}}
+
+.navtab{border:0;background:transparent;color:#526357;font-size:12px;font-weight:750;padding:10px 2px;white-space:nowrap}
+.navtab.active,.navtab:hover{color:var(--green)}
+.notifCount{display:inline-grid;place-items:center;min-width:17px;height:17px;padding:0 4px;border-radius:20px;background:#b44747;color:#fff;font-size:10px;margin-left:3px}
+.appScreen{min-height:65vh;padding:36px 0 56px}
+.screenIntro h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.2px;margin:8px 0}
+.searchPageTools{display:grid;grid-template-columns:1fr 210px 190px;gap:10px;margin:25px 0 18px;background:white;border:1px solid var(--line);border-radius:18px;padding:14px}
+.searchPageTools>select{border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px;color:var(--ink);min-width:0}
+.screenResultLine{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 18px;font-size:13px}
+.requestBtn{width:100%;margin-top:10px;border:0;border-radius:11px;padding:11px;background:var(--butter);color:var(--deep);font-weight:850;font-size:11px}
+.requestBtn:hover{background:var(--sage)}
+.notificationActions{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0}
+.notificationList{display:grid;gap:11px}
+.notificationItem{display:flex;gap:13px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}
+.notificationItem.unread{border-color:#a9c49b;background:#fbfdf8}
+.notificationIcon{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;border-radius:14px;background:var(--butter);font-size:21px}
+.notificationItem h3{font-size:14px;margin:0 0 5px}.notificationItem p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
+.notificationItem small{display:block;color:var(--muted);font-size:10px;margin-top:8px}
+.notificationItem .markRead{margin-left:auto;white-space:nowrap;border:1px solid var(--line);border-radius:9px;background:white;padding:7px;font-size:10px}
+.dashboardStats{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:12px;margin:25px 0}
+.dashboardStats>div{border:1px solid var(--line);background:white;border-radius:16px;padding:17px}
+.dashboardStats strong{display:block;font-size:24px;color:var(--green)}.dashboardStats span{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.dashboardStats>.primary{align-self:stretch}.mobileBar{grid-template-columns:repeat(5,1fr)}
+@media(max-width:900px){.navlinks{gap:12px}.navtab{font-size:11px}.navactions>a.primary{display:none}}
+@media(max-width:700px){.navlinks{display:none}.nav{justify-content:space-between}.brand{min-width:0}.navactions{margin-left:auto}.navactions .secondary{display:none}.searchPageTools{grid-template-columns:1fr}.dashboardStats{grid-template-columns:repeat(2,1fr)}.dashboardStats>.primary{grid-column:1/-1}.appScreen{padding:25px 0 42px}.notificationItem{padding:13px}.notificationItem .markRead{font-size:9px}}
+
+
+.proActions{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.proActions button,.listingActions button{flex:1;border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 5px;font-size:10px;font-weight:750;color:var(--deep)}.proActions button:hover,.listingActions button:hover{background:var(--butter)}
+.searchPageTools{grid-template-columns:minmax(180px,1fr) 180px 160px 130px 130px 170px!important}
+#detailsContent{font-size:13px;line-height:1.7;color:var(--muted)}.detailHero{width:100%;max-height:260px;object-fit:cover;border-radius:15px;background:var(--cream);margin-bottom:14px}.detailPrice{font-size:24px;font-weight:900;color:var(--green);margin:8px 0}.detailGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.detailCell{background:var(--cream);border-radius:11px;padding:10px}.detailCell strong{display:block;color:var(--ink);font-size:10px;text-transform:uppercase;letter-spacing:.05em}.detailCell span{display:block;color:var(--ink);margin-top:4px}
+@media(max-width:1000px){.searchPageTools{grid-template-columns:1fr 1fr 1fr!important}.searchPageTools .fieldwrap{grid-column:1/-1}}
+@media(max-width:600px){.searchPageTools{grid-template-columns:1fr 1fr!important}.searchPageTools input:first-of-type{grid-column:1/-1}.proActions button{font-size:9px}.detailGrid{grid-template-columns:1fr 1fr}}
+
+
+.policyWrap{max-width:920px}.policyCard,.adminSection{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}.policyCard h3,.adminSection h3{margin:0 0 10px;font-size:17px}.policyCard p,.policyCard li{font-size:13px;line-height:1.8;color:var(--muted)}.policyCard ul{padding-left:21px;margin:10px 0}.adminListingList{display:grid;gap:10px}.adminListingRow{display:flex;align-items:center;gap:12px;justify-content:space-between;border:1px solid var(--line);border-radius:13px;padding:12px}.adminListingRow strong{display:block;font-size:13px}.adminListingRow small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.adminActions{display:flex;gap:7px;flex-wrap:wrap}.adminActions button{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 10px;font-size:11px;font-weight:750}.adminActions .danger{color:#a12e2e;border-color:#efcccc}.policyWrap .sub{max-width:720px}.appScreen[hidden]{display:none!important}
+@media(max-width:700px){.policyCard,.adminSection{padding:15px}.adminListingRow{align-items:flex-start;flex-direction:column}.adminActions{width:100%}.adminActions button{flex:1}.navactions .secondary{padding:8px 9px;font-size:11px}}
+
+.orderRow{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}.orderRow h3{font-size:14px;margin:0 0 6px}.orderRow p{font-size:12px;line-height:1.6;color:var(--muted);margin:3px 0}.orderControls{display:flex;flex-direction:column;gap:8px;min-width:150px}.orderControls select{border:1px solid var(--line);border-radius:9px;background:white;padding:9px;font-size:11px}.orderControls button{border:1px solid var(--line);background:var(--butter);border-radius:9px;padding:9px;font-size:11px;font-weight:800}.statusPill{display:inline-block;border-radius:20px;padding:5px 8px;background:var(--butter);color:var(--green);font-size:10px;font-weight:850;margin-top:4px}.mobileBar{grid-template-columns:repeat(5,1fr)}
+@media(max-width:700px){.orderRow{grid-template-columns:1fr}.orderControls{min-width:0;display:grid;grid-template-columns:1fr 1fr}.orderControls select{grid-column:1/-1}}
+
+
+/* Mobile menu fix: hamburger opens a navigation panel instead of scrolling to categories. */
+.mobileMenuOverlay{position:fixed;inset:0;background:rgba(15,25,18,.48);z-index:9998;display:flex;justify-content:flex-end}
+.mobileMenuPanel{width:min(88vw,360px);height:100%;overflow:auto;background:var(--paper,#fff);padding:22px 18px 30px;box-shadow:-10px 0 35px #0002}
+.mobileMenuHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.mobileMenuHead strong{font-size:20px;color:var(--green,#315c3e)}
+.mobileMenuClose{font-size:26px;line-height:1;border:1px solid var(--line,#ddd);border-radius:12px;background:white;padding:9px 14px}
+.mobileMenuLinks{display:grid;gap:9px}
+.mobileMenuLinks button{width:100%;text-align:left;padding:14px 15px;border:1px solid var(--line,#ddd);border-radius:12px;background:white;color:var(--ink,#233);font:inherit;font-weight:700}
+.mobileMenuLinks button:active,.mobileMenuLinks button:hover{background:var(--butter,#f5f4e9)}
+[hidden].mobileMenuOverlay{display:none!important}
+@media(min-width:901px){.mobileMenuOverlay{display:none!important}}
+
+</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23315c3e'/%3E%3Ctext x='32' y='45' font-size='36' font-weight='900' text-anchor='middle' fill='white' font-family='Arial'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href='data:application/manifest+json,{"name":"Mughal Marketplace","short_name":"Mughal","start_url":".","display":"standalone","background_color":"%23fbfcf7","theme_color":"%23315c3e","icons":[]}'>
+<meta property="og:title" content="Mughal Marketplace | Lahore's pre-loved marketplace"><meta property="og:description" content="Discover and list pre-loved items in Lahore, Pakistan."><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta name="robots" content="index,follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mughal Marketplace","description":"Pre-loved marketplace in Lahore, Pakistan"}</script>
+</head>
+<body>
+<div class="announce" data-en="♻️ Give good things a second life · Lahore, Pakistan" data-ur="♻️ اچھی چیزوں کو دوسری زندگی دیں · لاہور، پاکستان">♻️ Give good things a second life · Lahore, Pakistan</div>
+<header class="header"><div class="container nav"><a href="#home" class="brand" aria-label="Mughal Marketplace home"><div class="brandmark">M</div><div><div class="brandname">Mughal Marketplace</div><div class="brandtag" data-en="PRE-LOVED FINDS, NEW STORIES" data-ur="استعمال شدہ چیزیں، نئی کہانیاں">PRE-LOVED FINDS, NEW STORIES</div></div></a><nav class="navlinks"><button class="navtab active" onclick="goScreen('home')" data-en="Home" data-ur="ہوم">Home</button><button class="navtab" onclick="goScreen('search')" data-en="Search" data-ur="تلاش">Search</button><button class="navtab" onclick="goScreen('notifications')" data-en="Notifications" data-ur="اطلاعات">Notifications <span id="navNotifCount" class="notifCount" hidden>0</span></button><button class="navtab" onclick="goScreen('myListings')" data-en="My listings" data-ur="میرے اشتہارات">My listings</button><button class="navtab" onclick="goScreen('orders')">Orders</button><button class="navtab" onclick="goScreen('admin')">Admin</button><button class="navtab" onclick="goScreen('policies')">Safety & Policies</button></nav><div class="navactions"><button class="lang" id="langBtn">اردو</button><button class="secondary" onclick="openAccount()">Account</button><button class="secondary" onclick="openSell()" data-en="＋ Sell an item" data-ur="＋ چیز فروخت کریں">＋ Sell an item</button><a class="primary" href="#shop" data-en="Explore marketplace" data-ur="مارکیٹ دیکھیں">Explore marketplace</a><button class="iconbtn menuBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false">☰</button></div></div></header>
+
+<div id="mobileMenuOverlay" class="mobileMenuOverlay" hidden onclick="if(event.target===this) closeMobileMenu()" role="presentation">
+ <aside class="mobileMenuPanel" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mobileMenuHead"><strong>Mughal Marketplace</strong><button class="mobileMenuClose" onclick="closeMobileMenu()" aria-label="Close menu">×</button></div>
+  <nav class="mobileMenuLinks" aria-label="Mobile navigation">
+   <button onclick="mobileNavigate('home')">⌂ &nbsp; Home</button>
+   <button onclick="mobileNavigate('search')">⌕ &nbsp; Search listings</button>
+   <button onclick="mobileNavigate('categories')">▦ &nbsp; Categories</button>
+   <button onclick="mobileNavigate('shop')">▤ &nbsp; Browse all listings</button>
+   <button onclick="mobileNavigate('myListings')">♙ &nbsp; My listings</button>
+   <button onclick="mobileNavigate('orders')">▣ &nbsp; Orders</button>
+   <button onclick="mobileNavigate('notifications')">♧ &nbsp; Alerts / Notifications</button>
+   <button onclick="mobileNavigate('policies')">ⓘ &nbsp; Safety & Policies</button>
+   <button onclick="mobileNavigate('how')">? &nbsp; How it works</button>
+   <button onclick="mobileNavigate('faq')">☰ &nbsp; FAQ</button>
+   <button onclick="mobileNavigate('live')">⚙ &nbsp; Database connection</button>
+   <button onclick="closeMobileMenu(); openAccount()">♙ &nbsp; Account / Sign in</button>
+   <button onclick="closeMobileMenu(); openSell()">＋ &nbsp; Sell an item</button>
+  </nav>
+ </aside>
+</div>
+
+<main id="home">
+<section id="searchScreen" class="appScreen" hidden><div class="container screenIntro">
+<div class="kicker">FIND YOUR NEXT GOOD DEAL</div><h2 data-en="Search the marketplace" data-ur="مارکیٹ پلیس میں تلاش کریں">Search the marketplace</h2>
+<p class="sub">Search by item name, category, condition or Lahore area. Sort results to find the right item.</p>
+<div class="searchPageTools"><label class="fieldwrap"><span>⌕</span><input id="pageSearchInput" placeholder="Try: phone, desk, books..." aria-label="Search marketplace"></label>
+<select id="pageSearchCategory" aria-label="Filter by category"><option value="all">All categories</option><option>Electronics</option><option>Home & Furniture</option><option>Fashion</option><option>Books & Study</option><option>Sports & Hobbies</option><option>Other</option></select>
+<select id="pageSortSelect" aria-label="Sort results"><option value="featured">Recommended</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select><input id="minPriceFilter" type="number" min="0" placeholder="Min price (Rs)" aria-label="Minimum price"><input id="maxPriceFilter" type="number" min="0" placeholder="Max price (Rs)" aria-label="Maximum price"><input id="areaFilter" type="text" maxlength="50" placeholder="Area e.g. Gulberg" aria-label="Filter by area"></div>
+<div class="screenResultLine"><strong id="searchResultCount">Browse available items</strong><button class="secondary" onclick="clearSearchPage()">Clear search</button></div>
+<div class="products" id="searchPageGrid"></div><div class="empty" id="searchPageEmpty">No items match your search. Try another word or category.</div></div></section>
+<section id="notificationsScreen" class="appScreen" hidden><div class="container screenIntro">
+<div class="kicker">ACTIVITY CENTRE</div><h2 data-en="Notifications" data-ur="اطلاعات">Notifications</h2>
+<p class="sub">Buyer requests, listing activity and important marketplace updates appear here in this browser preview. Open Orders to manage request status.</p>
+<div class="notificationActions"><button class="primary" onclick="enableBrowserNotifications()">Enable browser notifications</button><button class="secondary" onclick="markNotificationsRead()">✓ Mark all as read</button><button class="secondary" onclick="clearNotifications()">Clear notifications</button></div>
+<div id="notificationList" class="notificationList"></div>
+<div class="notice" style="margin-top:18px">Prototype note: these notifications are saved only in this browser. To notify you on another phone when a real customer requests an item, the website needs a server/database and push notification or email/WhatsApp integration.</div></div></section>
+<section id="myListingsScreen" class="appScreen" hidden><div class="container screenIntro">
+<div class="kicker">SELLER DASHBOARD</div><h2 data-en="My listings" data-ur="میرے اشتہارات">My listings</h2>
+<p class="sub">Manage items you have added from this browser. Incoming requests will be shown in Notifications.</p>
+<div class="dashboardStats"><div><strong id="myListingCount">0</strong><span>My listings</span></div><div><strong id="myRequestCount">0</strong><span>Buyer requests</span></div><div><strong id="unreadCount">0</strong><span>Unread alerts</span></div><button class="primary" onclick="openSell()">＋ Add a listing</button></div>
+<div class="products" id="myListingsGrid"></div><div class="empty" id="myListingsEmpty">You have not added any listings yet.</div></div></section>
+
+<section id="ordersScreen" class="appScreen" hidden><div class="container screenIntro">
+<div class="kicker">ORDER WORKSPACE · PREVIEW</div><h2>Orders & buyer requests</h2>
+<p class="sub">Track requests for listings created in this browser, update their status and see an estimated marketplace commission. This is a local demo, not a shared order system.</p>
+<div class="dashboardStats"><div><strong id="orderCount">0</strong><span>Total requests</span></div><div><strong id="pendingOrderCount">0</strong><span>Pending requests</span></div><div><strong id="commissionEstimate">Rs 0</strong><span>Estimated commission</span></div><button class="primary" onclick="renderOrders()">↻ Refresh</button></div>
+<div class="notice"><strong>How the launch model works:</strong> buyer sends a request, seller confirms availability, then both arrange pickup/delivery and payment directly. Commission shown here is only an estimate and is not charged or collected.</div>
+<div id="ordersList" class="notificationList"></div><div id="ordersEmpty" class="empty">No buyer requests yet. Requests on your own listings will appear here in this browser preview.</div>
+</div></section>
+<section id="adminScreen" class="appScreen" hidden><div class="container screenIntro">
+<div class="kicker">ADMIN WORKSPACE · LOCAL DEMO</div><h2>Admin panel</h2>
+<p class="sub">Review reports, moderate listings and monitor marketplace activity. This preview only manages data saved in this browser; a published admin panel must use server-side staff login and a shared database.</p>
+<div class="dashboardStats"><div><strong id="adminListingCount">0</strong><span>Active listings</span></div><div><strong id="adminReportCount">0</strong><span>Open reports</span></div><div><strong id="adminRequestCount">0</strong><span>Buyer requests</span></div><button class="primary" onclick="renderAdmin()">↻ Refresh</button></div>
+<div class="adminSection"><h3>Reported listings</h3><div id="adminReports" class="notificationList"></div><div id="adminReportsEmpty" class="empty">No reports have been submitted in this browser preview.</div></div>
+<div class="adminSection"><h3>Manage user listings</h3><div id="adminListings" class="adminListingList"></div><div id="adminListingsEmpty" class="empty">No user-created listings to manage.</div></div>
+<div class="adminSection"><h3>Business settings · preview</h3><p class="sub">Choose an example commission rate for planning only. It does not collect money or change real orders.</p><div class="formgrid" style="margin-top:12px"><div class="formfield"><label for="commissionRate">Commission per completed sale (%)</label><input id="commissionRate" type="number" min="0" max="30" step="0.5" value="5"></div><div class="formfield"><label for="featuredFee">Optional featured listing fee (PKR)</label><input id="featuredFee" type="number" min="0" max="100000" step="50" value="300"></div></div><button class="primary" style="margin-top:12px" onclick="saveBusinessSettings()">Save preview settings</button><p id="businessSettingsStatus" class="sub"></p></div>
+<div class="notice"><strong>Production security:</strong> never publish an admin dashboard protected only by front-end code. Real staff roles, report storage and delete actions must be enforced by the server.</div>
+</div></section>
+<section id="policiesScreen" class="appScreen" hidden><div class="container screenIntro policyWrap">
+<div class="kicker">SHOP SMART · STAY SAFE</div><h2>Safety, privacy & marketplace rules</h2>
+<p class="sub">Clear rules help buyers and sellers use Mughal Marketplace responsibly.</p>
+<div class="policyCard"><h3>Safe buying and selling</h3><ul><li>Meet in a busy public place and, where possible, bring someone you trust.</li><li>Inspect the item and test it before paying.</li><li>Never share an OTP, PIN, password or banking login.</li><li>Do not pay an advance to an unknown seller just to “reserve” an item.</li><li>Keep messages and payment receipts in case you need to report a problem.</li><li>Report suspicious listings, impersonation, counterfeit goods or misleading descriptions.</li></ul></div>
+<div class="policyCard"><h3>Privacy policy — preview draft</h3><p>This prototype may store listings, saved items, profile details, notifications and reports in your browser on this device. This preview does not send that information to a central server. Avoid entering sensitive personal information.</p><p>Before publication, the owner must define what data is collected, why it is needed, who can access it, how long it is retained, how users can request deletion, and which hosting or messaging providers process it.</p></div>
+<div class="policyCard"><h3>Terms of use — preview draft</h3><ul><li>Users must provide honest descriptions, accurate prices and permission to sell listed items.</li><li>Illegal, stolen, counterfeit, dangerous or otherwise prohibited goods are not allowed.</li><li>Buyers and sellers are responsible for checking items and agreeing on safe handover arrangements.</li><li>Mughal Marketplace is a listing platform concept; this preview does not process payments or guarantee transactions.</li><li>Listings or accounts may be restricted after a valid safety report when the production moderation system is in place.</li></ul></div>
+<div class="policyCard"><h3>How to report a problem</h3><p>Open an item and choose <strong>Report</strong>. In this preview, reports are saved locally for demonstration only. On the published website, reports should be delivered to the admin moderation queue and reviewed by an authorized moderator.</p><button class="primary" onclick="goScreen('search')">Browse listings</button></div>
+<div class="notice">These policy sections are starter drafts, not legal advice. Review and adapt them for your real service and applicable Pakistani laws before publication.</div>
+</div></section>
+<section class="hero" id="heroSection"><div class="container"><div class="heroGrid"><div><div class="eyebrow"><span class="dot"></span><span data-en="LAHORE'S COMMUNITY MARKETPLACE" data-ur="لاہور کی کمیونٹی مارکیٹ پلیس">LAHORE'S COMMUNITY MARKETPLACE</span></div><h1 data-en="Find a good deal.<br><em>Pass it on.</em>" data-ur="اچھی چیز تلاش کریں۔<br><em>آگے بڑھائیں۔</em>">Find a good deal.<br><em>Pass it on.</em></h1><p data-en="Discover pre-loved finds, give useful things a new home, and connect with local sellers in Lahore. A simpler way to buy and sell second-hand." data-ur="استعمال شدہ اچھی چیزیں تلاش کریں، کارآمد چیزوں کو نیا گھر دیں، اور لاہور کے مقامی فروخت کنندگان سے رابطہ کریں۔ خرید و فروخت کا آسان طریقہ۔">Discover pre-loved finds, give useful things a new home, and connect with local sellers in Lahore. A simpler way to buy and sell second-hand.</p><div class="heroBtns"><a href="#shop" class="primary" data-en="Browse listings →" data-ur="چیزیں دیکھیں ←">Browse listings →</a><button class="secondary" onclick="openSell()" data-en="＋ List your item" data-ur="＋ اپنی چیز شامل کریں">＋ List your item</button></div><div class="trustrow"><span>✓ <b data-en="Local listings" data-ur="مقامی اشتہارات">Local listings</b></span><span>✓ <b data-en="English + اردو" data-ur="English + اردو">English + اردو</b></span><span>✓ <b data-en="Contact sellers directly" data-ur="فروخت کنندہ سے براہ راست رابطہ">Contact sellers directly</b></span></div></div><div class="heroVisual"><div class="floatNote note2">🌱 <span data-en="Reuse more" data-ur="دوبارہ استعمال کریں">Reuse more</span><small data-en="Waste less, shop thoughtfully" data-ur="کم ضیاع، سمجھداری سے خریداری">Waste less, shop thoughtfully</small></div><div class="visualCard"><div class="visualTop"><span data-en="COMMUNITY PICK" data-ur="کمیونٹی کی پسند">COMMUNITY PICK</span><span class="livepill">● <span data-en="Pre-loved" data-ur="استعمال شدہ">Pre-loved</span></span></div><div class="visualItem"><div class="visualPic">🎧</div><div><h3 data-en="Wireless headphones" data-ur="وائرلیس ہیڈفونز">Wireless headphones</h3><p data-en="Good condition · Lahore" data-ur="اچھی حالت · لاہور">Good condition · Lahore</p><div class="price">Rs 3,500</div></div></div><div class="visualFoot"><span data-en="Example listing" data-ur="نمونہ اشتہار">Example listing</span><span data-en="Browse below ↓" data-ur="نیچے دیکھیں ↓">Browse below ↓</span></div></div><div class="floatNote note1">📍 Lahore, Pakistan<small data-en="Buy local. Reuse better." data-ur="مقامی خریداری، بہتر استعمال">Buy local. Reuse better.</small></div></div></div>
+<div class="searchPanel"><label class="fieldwrap"><span>⌕</span><input id="searchInput" placeholder="Search phones, furniture, books..." aria-label="Search items"></label><label class="fieldwrap"><span>▦</span><select id="searchCategory" aria-label="Choose category"><option value="all" data-en="All categories" data-ur="تمام اقسام">All categories</option><option>Electronics</option><option>Home & Furniture</option><option>Fashion</option><option>Books & Study</option><option>Sports & Hobbies</option><option>Other</option></select></label><button class="primary" onclick="filterProducts()" data-en="Search items" data-ur="تلاش کریں">Search items</button></div></div></section>
+<section class="section" id="categories"><div class="container"><div class="sectionHead"><div><div class="kicker" data-en="SHOP BY CATEGORY" data-ur="قسم کے مطابق خریداری">SHOP BY CATEGORY</div><h2 data-en="What are you looking for?" data-ur="آپ کیا تلاش کر رہے ہیں؟">What are you looking for?</h2><p class="sub" data-en="Choose a category to narrow down the listings." data-ur="اشتہارات محدود کرنے کے لیے ایک قسم منتخب کریں۔">Choose a category to narrow down the listings.</p></div></div><div class="categories"><button class="cat active" data-cat="all" onclick="setCategory('all')"><div class="catIcon">🛍️</div><strong data-en="All items" data-ur="تمام چیزیں">All items</strong><small data-en="Everything" data-ur="سب کچھ">Everything</small></button><button class="cat" data-cat="Electronics" onclick="setCategory('Electronics')"><div class="catIcon">📱</div><strong data-en="Electronics" data-ur="الیکٹرانکس">Electronics</strong><small data-en="Tech & devices" data-ur="ٹیک اور آلات">Tech & devices</small></button><button class="cat" data-cat="Home & Furniture" onclick="setCategory('Home & Furniture')"><div class="catIcon">🪑</div><strong data-en="Home" data-ur="گھر کا سامان">Home</strong><small data-en="Furniture & more" data-ur="فرنیچر وغیرہ">Furniture & more</small></button><button class="cat" data-cat="Fashion" onclick="setCategory('Fashion')"><div class="catIcon">👟</div><strong data-en="Fashion" data-ur="فیشن">Fashion</strong><small data-en="Wear & carry" data-ur="لباس اور بیگ">Wear & carry</small></button><button class="cat" data-cat="Books & Study" onclick="setCategory('Books & Study')"><div class="catIcon">📚</div><strong data-en="Books" data-ur="کتابیں">Books</strong><small data-en="Read & learn" data-ur="پڑھیں اور سیکھیں">Read & learn</small></button><button class="cat" data-cat="Sports & Hobbies" onclick="setCategory('Sports & Hobbies')"><div class="catIcon">⚽</div><strong data-en="Sports" data-ur="کھیل">Sports</strong><small data-en="Play & create" data-ur="کھیل اور مشغلے">Play & create</small></button></div></div></section>
+<section class="section" id="recentlyViewedSection" hidden><div class="container"><div class="sectionHead"><div><div class="kicker">YOUR ACTIVITY</div><h2>Recently viewed</h2><p class="sub">Pick up where you left off.</p></div><button class="secondary" onclick="clearRecentlyViewed()">Clear history</button></div><div class="products" id="recentlyViewedGrid"></div></div></section><section class="section" id="shop" style="padding-top:8px"><div class="container"><div class="sectionHead"><div><div class="kicker" data-en="HANDPICKED FOR YOU" data-ur="آپ کے لیے منتخب">HANDPICKED FOR YOU</div><h2 data-en="Explore recent listings" data-ur="حالیہ اشتہارات دیکھیں">Explore recent listings</h2><p class="sub" data-en="Demo examples show how listings will look. Replace them with real seller listings before launch." data-ur="یہ نمونے دکھاتے ہیں کہ اشتہارات کیسے نظر آئیں گے۔ لانچ سے پہلے حقیقی اشتہارات شامل کریں۔">Demo examples show how listings will look. Replace them with real seller listings before launch.</p></div><div class="productTools"><button class="secondary" type="button" onclick="toggleFavorites()" id="favoritesBtn">♡ Saved items</button><select id="sortSelect" onchange="filterProducts()" aria-label="Sort listings"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div><div class="products" id="productGrid"></div><div class="listingCount" id="listingCount" aria-live="polite"></div><div class="empty" id="emptyState">No items match your search. Try another word or category.</div><div style="text-align:center;margin-top:25px"><button class="secondary" onclick="resetFilters()" data-en="Clear filters" data-ur="فلٹر ختم کریں">Clear filters</button></div></div></section>
+<section class="section" id="how"><div class="container"><div class="sectionHead"><div><div class="kicker" data-en="SIMPLE BY DESIGN" data-ur="آسان طریقہ">SIMPLE BY DESIGN</div><h2 data-en="How Mughal Marketplace works" data-ur="مغل مارکیٹ پلیس کیسے کام کرتی ہے">How Mughal Marketplace works</h2><p class="sub" data-en="A simple starting point for local second-hand buying and selling." data-ur="مقامی استعمال شدہ چیزوں کی خرید و فروخت کا آسان آغاز۔">A simple starting point for local second-hand buying and selling.</p></div></div><div class="steps"><article class="step"><div class="stepNum">01</div><h3 data-en="Discover an item" data-ur="چیز تلاش کریں">Discover an item</h3><p data-en="Search or browse categories. Read the description and check the item's condition, price and location." data-ur="تلاش کریں یا اقسام دیکھیں۔ تفصیل، حالت، قیمت اور مقام پڑھیں۔">Search or browse categories. Read the description and check the item's condition, price and location.</p></article><article class="step"><div class="stepNum">02</div><h3 data-en="Talk to the seller" data-ur="فروخت کنندہ سے بات کریں">Talk to the seller</h3><p data-en="Use the seller's contact method to ask questions, request more photos and agree on a safe meeting or delivery." data-ur="سوال پوچھنے، مزید تصاویر مانگنے اور محفوظ ملاقات یا ترسیل طے کرنے کے لیے رابطہ کریں۔">Use the seller's contact method to ask questions, request more photos and agree on a safe meeting or delivery.</p></article><article class="step"><div class="stepNum">03</div><h3 data-en="Buy or list responsibly" data-ur="ذمہ داری سے خریدیں یا اشتہار دیں">Buy or list responsibly</h3><p data-en="Inspect items before paying. Sellers should provide honest descriptions and only list items they are allowed to sell." data-ur="ادائیگی سے پہلے چیز دیکھیں۔ فروخت کنندگان درست تفصیل دیں اور صرف جائز چیزیں درج کریں۔">Inspect items before paying. Sellers should provide honest descriptions and only list items they are allowed to sell.</p></article></div></div></section>
+<section class="section" style="padding-top:0"><div class="container"><div class="sellBanner"><div><h2 data-en="Have something worth passing on?" data-ur="کوئی اچھی چیز فروخت کرنا چاہتے ہیں؟">Have something worth passing on?</h2><p data-en="Create a sample listing in this preview. In the production version, listings need a connected database and user accounts to be shared with everyone." data-ur="اس پریویو میں نمونہ اشتہار بنائیں۔ حقیقی ویب سائٹ میں اشتہارات سب کو دکھانے کے لیے ڈیٹا بیس اور صارف اکاؤنٹس درکار ہوں گے۔">Create a sample listing in this preview. In the production version, listings need a connected database and user accounts to be shared with everyone.</p></div><button class="primary" onclick="openSell()" data-en="＋ List an item" data-ur="＋ چیز شامل کریں">＋ List an item</button></div></div></section>
+<section class="section" id="safety"><div class="container"><div class="sectionHead"><div><div class="kicker" data-en="SHOP SMART, STAY SAFE" data-ur="سمجھداری سے خریدیں، محفوظ رہیں">SHOP SMART, STAY SAFE</div><h2 data-en="A few important safety tips" data-ur="چند اہم حفاظتی مشورے">A few important safety tips</h2></div></div><div class="infoGrid"><div class="infoCard"><h3>🛡️ <span data-en="For buyers" data-ur="خریداروں کے لیے">For buyers</span></h3><ul><li data-en="Inspect the item in person before paying where possible." data-ur="ممکن ہو تو ادائیگی سے پہلے چیز خود دیکھیں۔">Inspect the item in person before paying where possible.</li><li data-en="Meet in a public, well-lit place and take a trusted person with you." data-ur="عوامی، روشن جگہ پر ملیں اور کسی قابل اعتماد شخص کو ساتھ لے جائیں۔">Meet in a public, well-lit place and take a trusted person with you.</li><li data-en="Never share passwords, OTPs or banking PINs." data-ur="پاس ورڈ، OTP یا بینک PIN کبھی نہ دیں۔">Never share passwords, OTPs or banking PINs.</li><li data-en="Be cautious of advance-payment pressure and deals that seem too good to be true." data-ur="پیشگی ادائیگی کے دباؤ اور غیر معمولی سستی پیشکش سے محتاط رہیں۔">Be cautious of advance-payment pressure and deals that seem too good to be true.</li></ul></div><div class="infoCard"><h3>🤝 <span data-en="For sellers" data-ur="فروخت کنندگان کے لیے">For sellers</span></h3><ul><li data-en="Use your own photos and describe flaws honestly." data-ur="اپنی تصاویر استعمال کریں اور خامیاں ایمانداری سے بتائیں۔">Use your own photos and describe flaws honestly.</li><li data-en="Do not post your home address or private documents." data-ur="گھر کا پتہ یا نجی دستاویزات شائع نہ کریں۔">Do not post your home address or private documents.</li><li data-en="Confirm payment in your own account before handing over an item." data-ur="چیز دینے سے پہلے اپنے اکاؤنٹ میں ادائیگی کی تصدیق کریں۔">Confirm payment in your own account before handing over an item.</li><li data-en="Do not list stolen, prohibited or counterfeit goods." data-ur="چوری شدہ، ممنوعہ یا جعلی سامان درج نہ کریں۔">Do not list stolen, prohibited or counterfeit goods.</li></ul></div></div></div></section>
+<section class="section" id="faq" style="padding-top:0"><div class="container"><div class="sectionHead"><div><div class="kicker">FAQ</div><h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2></div></div><div class="faq"><details><summary data-en="Is this the final live marketplace?" data-ur="کیا یہ مکمل لائیو مارکیٹ پلیس ہے؟">Is this the final live marketplace?</summary><p data-en="This is a front-end preview. Sample listings and forms work in this browser, but shared listings, accounts, moderation and real orders need a backend and database." data-ur="یہ فرنٹ اینڈ پریویو ہے۔ نمونہ اشتہارات اور فارم اس براؤزر میں کام کرتے ہیں، مگر مشترکہ اشتہارات، اکاؤنٹس، نگرانی اور حقیقی آرڈرز کے لیے بیک اینڈ اور ڈیٹا بیس چاہیے۔">This is a front-end preview. Sample listings and forms work in this browser, but shared listings, accounts, moderation and real orders need a backend and database.</p></details><details><summary data-en="Does the site collect commission now?" data-ur="کیا ویب سائٹ ابھی کمیشن وصول کرتی ہے؟">Does the site collect commission now?</summary><p data-en="No. This preview does not collect money. Any future commission must be clearly disclosed and implemented with a secure, supported payment workflow." data-ur="نہیں۔ یہ پریویو رقم وصول نہیں کرتا۔ مستقبل میں کمیشن واضح طور پر بتایا جائے اور محفوظ ادائیگی نظام کے ذریعے نافذ کیا جائے۔">No. This preview does not collect money. Any future commission must be clearly disclosed and implemented with a secure, supported payment workflow.</p></details><details><summary data-en="How can I contact Mughal Marketplace?" data-ur="مغل مارکیٹ پلیس سے رابطہ کیسے کریں؟">How can I contact Mughal Marketplace?</summary><p data-en="Use the WhatsApp contact button below. For safety, do not send passwords, OTPs or bank PINs to anyone." data-ur="نیچے واٹس ایپ رابطہ بٹن استعمال کریں۔ حفاظت کے لیے کسی کو پاس ورڈ، OTP یا بینک PIN نہ بھیجیں۔">Use the WhatsApp contact button below. For safety, do not send passwords, OTPs or bank PINs to anyone.</p></details></div></div></section>
+
+<section class="section" id="liveMarketplaceBackend" style="background:var(--cream,#fbf8ef)"><div class="container"><div class="sectionHead"><div><div class="kicker">LIVE MARKETPLACE</div><h2 data-en="Create account, sign in & publish for everyone" data-ur="اکاؤنٹ بنائیں، سائن اِن کریں اور سب کے لیے اشتہار لگائیں">Create account, sign in & publish for everyone</h2><p class="sub" data-en="Connect Supabase to make accounts, listings and order requests shared across devices." data-ur="اکاؤنٹس، اشتہارات اور آرڈر کی درخواستیں سب کے لیے دستیاب کرنے کے لیے Supabase کنیکٹ کریں۔">Connect Supabase to make accounts, listings and order requests shared across devices.</p></div></div>
+<div class="panel" style="padding:20px;border-radius:18px;background:white;border:1px solid #d9dfd5"><div class="notice" id="mmDbNotice">Database not connected. Enter your Supabase Project URL and Public anon/publishable key below. Never use a service_role or secret key here.</div><div class="formgrid" style="margin-top:14px"><div class="formfield full"><label for="mmProjectUrl">Supabase Project URL</label><input id="mmProjectUrl" type="url" placeholder="https://your-project.supabase.co" autocomplete="url"></div><div class="formfield full"><label for="mmPublicKey">Supabase Public anon / publishable key</label><input id="mmPublicKey" type="password" placeholder="Paste public key" autocomplete="off"></div></div><div class="row" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><button class="primary" id="mmConnectBtn" type="button">Connect for this session</button><button class="secondary" id="mmDisconnectBtn" type="button">Disconnect</button></div><p id="mmStatus" class="notice" role="status" style="margin-top:12px">Not connected yet.</p>
+<hr style="margin:20px 0;border:0;border-top:1px solid #d9dfd5"><h3>Account / اکاؤنٹ</h3><div class="formgrid"><div class="formfield"><label for="mmEmail">Email</label><input id="mmEmail" type="email" autocomplete="email" placeholder="you@example.com"></div><div class="formfield"><label for="mmPassword">Password (8+ characters)</label><input id="mmPassword" type="password" minlength="8" autocomplete="current-password" placeholder="Password"></div></div><div class="row" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><button class="primary" id="mmSignup" type="button">Create account</button><button class="secondary" id="mmSignin" type="button">Sign in</button><button class="secondary" id="mmSignout" type="button" hidden>Sign out</button></div><p id="mmUser" class="sub">Not signed in</p>
+<div id="mmSellerPanel" hidden><hr style="margin:20px 0;border:0;border-top:1px solid #d9dfd5"><h3>List an item / چیز فروختنے کے لیے لگائیں</h3><form id="mmListingForm"><div class="formgrid"><div class="formfield"><label for="mmTitle">Item title</label><input id="mmTitle" required maxlength="100" placeholder="e.g. Study table"></div><div class="formfield"><label for="mmCategory">Category</label><select id="mmCategory"><option>Home & Furniture</option><option>Phones & Electronics</option><option>Fashion</option><option>Vehicles</option><option>Books & Education</option><option>Sports & Hobbies</option><option>Other</option></select></div><div class="formfield"><label for="mmPrice">Price (PKR)</label><input id="mmPrice" type="number" min="1" step="1" required></div><div class="formfield"><label for="mmCity">City</label><input id="mmCity" required maxlength="80" placeholder="Lahore, Multan, etc."></div><div class="formfield full"><label for="mmDescription">Description</label><textarea id="mmDescription" rows="3" maxlength="1500" placeholder="Condition and details"></textarea></div></div><button class="primary" type="submit" style="margin-top:12px">Publish listing</button></form></div>
+<hr style="margin:20px 0;border:0;border-top:1px solid #d9dfd5"><div class="sectionHead"><div><h3>Live Latest Listings / تازہ اشتہارات</h3><p class="sub">Items published to Supabase appear here for other visitors too.</p></div><button class="secondary" id="mmRefresh" type="button">Refresh</button></div><div id="mmLiveListings" class="products"><p class="sub">Connect Supabase to load real shared listings.</p></div>
+<div id="mmOrdersPanel" hidden style="margin-top:24px"><h3>My order requests / آرڈر کی درخواستیں</h3><div id="mmOrders"><p class="sub">No requests loaded.</p></div></div></div></div></section>
+</main><footer class="footer"><div class="container"><div class="footerGrid"><div><a href="#home" class="brand" aria-label="Mughal Marketplace home"><div class="brandmark">M</div><div><div class="brandname">Mughal Marketplace</div><div class="brandtag">PRE-LOVED FINDS, NEW STORIES</div></div></a><p data-en="A local marketplace concept for second-hand goods in Lahore, Pakistan. Buy thoughtfully, sell honestly and give useful items another life." data-ur="لاہور، پاکستان میں استعمال شدہ اشیاء کے لیے مقامی مارکیٹ پلیس کا تصور۔ سمجھداری سے خریدیں، ایمانداری سے فروخت کریں اور چیزوں کو نئی زندگی دیں۔">A local marketplace concept for second-hand goods in Lahore, Pakistan. Buy thoughtfully, sell honestly and give useful items another life.</p></div><div><h4 data-en="Explore" data-ur="دیکھیں">Explore</h4><div class="footerLinks"><a href="#shop" data-en="Browse listings" data-ur="اشتہارات دیکھیں">Browse listings</a><a href="#categories" data-en="Categories" data-ur="اقسام">Categories</a><a href="#" onclick="goScreen('policies');return false">Privacy & Terms</a><a href="#" onclick="goScreen('admin');return false">Admin preview</a><a href="#how" data-en="How it works" data-ur="طریقہ کار">How it works</a><a href="#faq">FAQ</a></div></div><div><h4 data-en="Contact & transparency" data-ur="رابطہ اور وضاحت">Contact & transparency</h4><p data-en="WhatsApp contact: 0300 4370691" data-ur="واٹس ایپ رابطہ: 0300 4370691">WhatsApp contact: 0300 4370691</p><a href="https://wa.me/923004370691" target="_blank" rel="noopener" class="primary" style="display:inline-block" data-en="Chat on WhatsApp ↗" data-ur="واٹس ایپ پر بات کریں ↗">Chat on WhatsApp ↗</a><p data-en="Preview only: sample items are illustrative. No payments are processed here." data-ur="صرف پریویو: نمونہ چیزیں وضاحت کے لیے ہیں۔ یہاں ادائیگی نہیں ہوتی۔">Preview only: sample items are illustrative. No payments are processed here.</p></div></div><div class="copyright"><span>© <span id="year"></span> Mughal Marketplace</span><span data-en="Made for Lahore · English and Urdu" data-ur="لاہور کے لیے · انگریزی اور اردو">Made for Lahore · English and Urdu</span></div></div><div class="container" style="padding:0 0 18px"><p style="font-size:11px;color:var(--muted)">Mughal Marketplace preview · Demo listings are examples only. Live publishing requires a backend, moderation, privacy policy, terms, and real notification setup.</p></div></footer>
+<nav class="mobileBar"><button onclick="goScreen('home')"><span>⌂</span><b>Home</b></button><button onclick="goScreen('search')"><span>⌕</span><b>Search</b></button><button onclick="openSell()"><span>＋</span><b>Sell</b></button><button onclick="goScreen('notifications')"><span>♧</span><b>Alerts <span id="mobileNotifCount"></span></b></button><button onclick="goScreen('orders')"><span>🛍</span><b>Orders</b></button></nav>
+
+<div class="modalBackdrop" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle"><div class="modal"><div class="modalHead"><h2 id="accountTitle">Your account</h2><button class="close" onclick="closeAccount()" aria-label="Close">×</button></div>
+<p class="sub">Create a local profile preview. This is not a secure account or online sign-in yet.</p>
+<form id="accountForm"><div class="formgrid"><div class="formfield full"><label for="profileName">Display name *</label><input id="profileName" required maxlength="60" placeholder="Your name"></div><div class="formfield full"><label for="profileEmail">Email (optional)</label><input id="profileEmail" type="email" maxlength="120" placeholder="you@example.com"></div><div class="formfield full"><label for="profilePhone">WhatsApp number (optional)</label><input id="profilePhone" type="tel" maxlength="24" placeholder="+92..."></div></div><div class="notice">Do not enter a password here. Real sign-up needs secure server-side authentication and account recovery.</div><button class="primary" style="width:100%" type="submit">Save profile on this device</button><button class="secondary" style="width:100%;margin-top:8px" type="button" onclick="clearAccount()">Remove local profile</button></form><div id="accountStatus" class="notice" hidden></div></div></div>
+<div class="modalBackdrop" id="detailsModal" role="dialog" aria-modal="true" aria-labelledby="detailsTitle"><div class="modal"><div class="modalHead"><h2 id="detailsTitle">Item details</h2><button class="close" onclick="closeDetails()" aria-label="Close">×</button></div><div id="detailsContent"></div></div></div><div class="modalBackdrop" id="sellModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modalHead"><h2 id="modalTitle" data-en="List an item" data-ur="چیز کا اشتہار دیں">List an item</h2><button class="close" onclick="closeSell()" aria-label="Close">×</button></div><form id="sellForm"><div class="formgrid"><div class="formfield"><label for="itemTitle" data-en="Item title *" data-ur="چیز کا نام *">Item title *</label><input id="itemTitle" required maxlength="70" placeholder="e.g. Study desk"></div><div class="formfield"><label for="itemPrice" data-en="Price (PKR) *" data-ur="قیمت (روپے) *">Price (PKR) *</label><input id="itemPrice" type="number" required min="1" max="100000000" placeholder="e.g. 4500"></div><div class="formfield"><label for="itemCategory" data-en="Category *" data-ur="قسم *">Category *</label><select id="itemCategory" required><option>Electronics</option><option>Home & Furniture</option><option>Fashion</option><option>Books & Study</option><option>Sports & Hobbies</option><option>Other</option></select></div><div class="formfield"><label for="itemCondition" data-en="Condition *" data-ur="حالت *">Condition *</label><select id="itemCondition" required><option>Like new</option><option>Good</option><option>Fair</option><option>For parts / repair</option></select></div><div class="formfield"><label for="itemArea" data-en="Area in Lahore" data-ur="لاہور کا علاقہ">Area in Lahore</label><input id="itemArea" maxlength="50" placeholder="e.g. Johar Town"></div><div class="formfield"><label for="itemContact" data-en="Contact number (optional)" data-ur="رابطہ نمبر (اختیاری)">Contact number (optional)</label><input id="itemContact" type="tel" maxlength="20" placeholder="e.g. 03001234567"><small style="color:var(--muted)">Use a WhatsApp number you are comfortable sharing publicly.</small></div><div class="formfield full"><label for="itemDesc" data-en="Description *" data-ur="تفصیل *">Description *</label><textarea id="itemDesc" required maxlength="500" placeholder="Mention condition, age, features and any flaws."></textarea></div><div class="formfield full"><label for="itemPhoto" data-en="Photo (optional, preview only)" data-ur="تصویر (اختیاری، صرف پریویو)">Photo (optional, preview only)</label><input id="itemPhoto" type="file" accept="image/*"><small style="color:var(--muted)">Choose a clear photo (maximum 2 MB). It will appear on your listing in this browser.</small></div></div><div class="notice" data-en="Preview only: this listing is saved in this browser only and is not published for other visitors. Never include your home address or private documents." data-ur="صرف پریویو: یہ اشتہار صرف اسی براؤزر میں محفوظ ہوگا، دوسرے وزیٹرز کو نہیں دکھے گا۔ گھر کا پتہ یا نجی دستاویزات شامل نہ کریں۔">Preview only: this listing is saved in this browser only and is not published for other visitors. Never include your home address or private documents.</div><button class="primary" type="submit" style="width:100%" data-en="Create preview listing" data-ur="پریویو اشتہار بنائیں">Create preview listing</button></form></div></div><div class="toast" id="toast"></div>
+<script>
+const demoItems=[
+{id:1,title:'Wireless headphones',category:'Electronics',price:3500,condition:'Good',area:'Gulberg',desc:'Comfortable wireless headphones. Tested and working; light signs of use.',emoji:'🎧',tag:'Demo example'},
+{id:2,title:'Wooden study desk',category:'Home & Furniture',price:8500,condition:'Good',area:'Johar Town',desc:'Sturdy study desk with a spacious top. Please inspect before purchase.',emoji:'🪑',tag:'Demo example'},
+{id:3,title:'Everyday sneakers',category:'Fashion',price:2200,condition:'Fair',area:'Model Town',desc:'Pre-loved sneakers. Check the size and condition in person.',emoji:'👟',tag:'Demo example'},
+{id:4,title:'School & college books',category:'Books & Study',price:1200,condition:'Good',area:'Township',desc:'A mixed set of study books. Message to confirm titles and editions.',emoji:'📚',tag:'Demo example'},
+{id:5,title:'Android smartphone',category:'Electronics',price:18500,condition:'Good',area:'DHA Phase 4',desc:'Example listing only. Verify device, battery, IMEI and ownership before buying.',emoji:'📱',tag:'Demo example'},
+{id:6,title:'Table lamp',category:'Home & Furniture',price:1800,condition:'Like new',area:'Wapda Town',desc:'Simple desk lamp for a study corner. Confirm working condition at pickup.',emoji:'💡',tag:'Demo example'},
+{id:7,title:'Football',category:'Sports & Hobbies',price:1500,condition:'Good',area:'Faisal Town',desc:'Used football in good playing condition. Example item for the preview.',emoji:'⚽',tag:'Demo example'},
+{id:8,title:'Backpack',category:'Fashion',price:1900,condition:'Good',area:'Garden Town',desc:'Everyday backpack with multiple compartments. Check zips before buying.',emoji:'🎒',tag:'Demo example'}];
+
+let userItems=[];let saved=new Set();let activeCategory='all';let language='en';let favoritesOnly=false;
+try{userItems=JSON.parse(localStorage.getItem('mm_userItems')||'[]');saved=new Set(JSON.parse(localStorage.getItem('mm_saved')||'[]'));}catch(e){userItems=[];saved=new Set();}
+function persist(){try{localStorage.setItem('mm_userItems',JSON.stringify(userItems));localStorage.setItem('mm_saved',JSON.stringify([...saved]));}catch(e){showToast('Browser storage is full; this listing may not persist.');}}
+
+const $=s=>document.querySelector(s);const money=n=>'Rs '+Number(n).toLocaleString('en-PK');
+function showToast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+function allItems(){return [...userItems,...demoItems]}
+function renderProducts(items=allItems()){$('#productGrid').innerHTML='';const q=$('#searchInput').value.trim().toLowerCase();let list=items.filter(p=>(activeCategory==='all'||p.category===activeCategory)&&(!q||[p.title,p.category,p.area,p.desc].join(' ').toLowerCase().includes(q))&&(!favoritesOnly||saved.has(p.id)));const sort=$('#sortSelect').value;if(sort==='low')list.sort((a,b)=>a.price-b.price);if(sort==='high')list.sort((a,b)=>b.price-a.price);$('#emptyState').style.display=list.length?'none':'block';$('#listingCount').textContent=`Showing ${list.length} item${list.length===1?'':'s'} · ${userItems.length} listing${userItems.length===1?'':'s'} added on this browser`;list.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${p.photo?`<img src="${p.photo}" alt="${esc(p.title)}" loading="lazy">`:`<span class="fallbackEmoji">${p.emoji||'📦'}</span>`}<span class="tag">${esc(p.tag||'Your preview')}</span><button class="heart ${saved.has(p.id)?'saved':''}" aria-label="Save item" onclick="toggleSave(${p.id})">${saved.has(p.id)?'♥':'♡'}</button></div><div class="productBody"><div class="prodMeta"><span>${esc(p.category)}</span><span>${esc(p.condition)}</span></div><h3>${esc(p.title)}</h3><p class="desc">${esc(p.desc)}</p><div class="prodMeta"><span>📍 ${esc(p.area||'Lahore')}</span><span>${p.user?'Your listing':p.live?'Live listing':'Demo example'}</span></div><div class="prodBottom"><span class="prodPrice">${money(p.price)}</span><button class="smallBtn" onclick="contactSeller(${p.id})">${language==='ur'?'رابطہ':'Contact seller'}</button></div><button class="requestBtn" onclick="requestToBuy(${p.id})">🛍️ Request to buy</button><div class="proActions"><button onclick="viewItem(${p.id})">View details</button><button onclick="shareItem(${p.id})">Share</button><button onclick="reportItem(${p.id})">Report</button></div>${p.user?`<div class="listingActions"><button onclick="editListing(${p.id})">✎ Edit listing</button><button onclick="deleteListing(${p.id})">Delete listing</button></div>`:''}</div>`;$('#productGrid').appendChild(el)});$('#favoritesBtn').textContent=favoritesOnly?'♥ Show all items':'♡ Saved items';}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function filterProducts(){activeCategory=$('#searchCategory').value;$('#pageSearchInput').value=$('#searchInput').value;$('#pageSearchCategory').value=activeCategory;document.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat===activeCategory));renderProducts();goScreen('search')}
+function setCategory(c){activeCategory=c;$('#searchCategory').value=c;document.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat===c));renderProducts();$('#shop').scrollIntoView({behavior:'smooth',block:'start'})}
+function resetFilters(){activeCategory='all';$('#searchCategory').value='all';$('#searchInput').value='';$('#sortSelect').value='featured';favoritesOnly=false;document.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat==='all'));renderProducts()}
+function toggleSave(id){if(saved.has(id)){saved.delete(id);showToast(language==='ur'?'محفوظ فہرست سے ہٹا دیا':'Removed from saved items')}else{saved.add(id);showToast(language==='ur'?'محفوظ کر لیا':'Item saved in this preview')}renderProducts()}
+function contactSeller(id){const p=allItems().find(x=>x.id===id);if(!p)return;const text=`Hello, I'm interested in ${p.title} listed for ${money(p.price)} on Mughal Marketplace. Is it still available?`;const digits=String(p.contact||'').replace(/\D/g,'');const number=digits?(digits.startsWith('0')?'92'+digits.slice(1):digits):'923004370691';window.open('https://wa.me/'+number+'?text='+encodeURIComponent(text),'_blank','noopener');}
+function openSell(){if(!$('#sellForm').dataset.editId){$('#modalTitle').textContent='List an item';$('#sellForm button[type=submit]').textContent='Create preview listing'}$('#sellModal').classList.add('show');document.body.style.overflow='hidden'}function closeSell(){$('#sellModal').classList.remove('show');document.body.style.overflow=''}$('#sellModal').addEventListener('click',e=>{if(e.target.id==='sellModal')closeSell()});
+$('#sellForm').addEventListener('submit',e=>{e.preventDefault();const file=$('#itemPhoto').files[0];let emoji='📦';const c=$('#itemCategory').value;if(c==='Electronics')emoji='📱';if(c==='Home & Furniture')emoji='🪑';if(c==='Fashion')emoji='👟';if(c==='Books & Study')emoji='📚';if(c==='Sports & Hobbies')emoji='⚽';const editId=Number($('#sellForm').dataset.editId||0);const existing=userItems.find(x=>x.id===editId);const saveItem=photo=>{const item={id:editId||Date.now(),title:$('#itemTitle').value.trim(),price:Number($('#itemPrice').value),category:c,condition:$('#itemCondition').value,area:$('#itemArea').value.trim()||'Lahore',contact:$('#itemContact').value.trim(),desc:$('#itemDesc').value.trim(),emoji,photo:photo||(existing&&existing.photo)||'',tag:'Your listing',user:true};if(editId){userItems=userItems.map(x=>x.id===editId?item:x);}else{userItems.unshift(item);}persist();$('#sellForm').reset();delete $('#sellForm').dataset.editId;$('#modalTitle').textContent='List an item';$('#sellForm button[type=submit]').textContent='Create preview listing';closeSell();favoritesOnly=false;resetFilters();showToast(editId?'Listing updated on this browser':'Listing added to this browser preview');$('#shop').scrollIntoView({behavior:'smooth'});};if(file){if(file.size>2*1024*1024){showToast('Please choose an image under 2 MB.');return;}const reader=new FileReader();reader.onload=()=>saveItem(reader.result);reader.readAsDataURL(file);}else saveItem('');});
+$('#searchInput').addEventListener('input',()=>renderProducts());$('#searchCategory').addEventListener('change',filterProducts);
+$('#langBtn').addEventListener('click',()=>{language=language==='en'?'ur':'en';document.documentElement.lang=language;document.documentElement.dir=language==='ur'?'rtl':'ltr';document.querySelectorAll('[data-en][data-ur]').forEach(el=>{el.innerHTML=el.dataset[language]});$('#langBtn').textContent=language==='en'?'اردو':'English';$('#searchInput').placeholder=language==='ur'?'موبائل، فرنیچر، کتابیں تلاش کریں...':'Search phones, furniture, books...';$('#emptyState').textContent=language==='ur'?'آپ کی تلاش سے کوئی چیز نہیں ملی۔ دوسرا لفظ یا قسم آزمائیں۔':'No items match your search. Try another word or category.';renderProducts()});
+let notifications=[];
+try{notifications=JSON.parse(localStorage.getItem('mm_notifications')||'[]')}catch(e){notifications=[]}
+let mmOrders=[];try{mmOrders=JSON.parse(localStorage.getItem('mm_orders')||'[]')}catch(e){mmOrders=[]}
+let mmBusinessSettings={commissionRate:5,featuredFee:300};try{mmBusinessSettings={...mmBusinessSettings,...JSON.parse(localStorage.getItem('mm_businessSettings')||'{}')}}catch(e){}
+function persistOrders(){try{localStorage.setItem('mm_orders',JSON.stringify(mmOrders))}catch(e){showToast('Browser storage is full; request could not be saved')}updateOrderStats()}
+function updateOrderStats(){const count=$('#orderCount');if(count)count.textContent=mmOrders.length;const pending=$('#pendingOrderCount');if(pending)pending.textContent=mmOrders.filter(o=>['New request','Confirmed'].includes(o.status)).length;const rate=Number(mmBusinessSettings.commissionRate||0);const estimate=mmOrders.filter(o=>o.status==='Completed').reduce((sum,o)=>sum+Number(o.price||0)*rate/100,0);const ce=$('#commissionEstimate');if(ce)ce.textContent=money(Math.round(estimate));const ac=$('#adminRequestCount');if(ac)ac.textContent=mmOrders.length;}
+
+function saveNotifications(){try{localStorage.setItem('mm_notifications',JSON.stringify(notifications))}catch(e){}updateNotificationCounts()}
+function updateNotificationCounts(){
+ const unread=notifications.filter(n=>!n.read).length;
+ const badge=$('#navNotifCount');if(badge){badge.hidden=!unread;badge.textContent=unread>99?'99+':unread}
+ const mobile=$('#mobileNotifCount');if(mobile)mobile.textContent=unread?`(${unread})`:'';
+ const uc=$('#unreadCount');if(uc)uc.textContent=unread;
+ const rc=$('#myRequestCount');if(rc)rc.textContent=mmOrders.length; updateOrderStats();
+ const lc=$('#myListingCount');if(lc)lc.textContent=userItems.length;
+}
+function goScreen(name){
+ [...document.querySelectorAll('#home > section')].forEach(s=>{if(s.classList.contains('appScreen'))s.hidden=true;else s.hidden=name!=='home'});
+ const target={search:'#searchScreen',notifications:'#notificationsScreen',myListings:'#myListingsScreen',admin:'#adminScreen',policies:'#policiesScreen',orders:'#ordersScreen'}[name];if(target)$(target).hidden=false;
+ document.querySelectorAll('.navtab').forEach(b=>b.classList.toggle('active',b.getAttribute('onclick')===`goScreen('${name}')`));
+ if(name==='search')renderSearchPage();if(name==='notifications')renderNotifications();if(name==='myListings')renderMyListings();if(name==='admin')renderAdmin();if(name==='orders')renderOrders();
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function makeNotification(title,message,kind='info',itemId=null){notifications.unshift({id:Date.now()+Math.random(),title,message,kind,itemId,read:false,createdAt:new Date().toLocaleString()});saveNotifications();try{if('Notification'in window&&Notification.permission==='granted')new Notification(title,{body:message})}catch(e){}}
+function requestToBuy(id){
+ const p=allItems().find(x=>x.id===id);if(!p)return;
+ if(!p.user){showToast('This is a sample item only. Try a listing you add yourself to test a buyer request.');makeNotification('Sample item preview',`“${p.title}” is a sample listing. No real seller or order is connected.`,'info',id);goScreen('notifications');return}
+ let profile={};try{profile=JSON.parse(localStorage.getItem('mm_profile')||'{}')}catch(e){}
+ const buyer=prompt('Buyer name (required):',profile.name||'');if(buyer===null||!buyer.trim())return;
+ const contact=prompt('Buyer WhatsApp number (required for this demo):',profile.phone||'');if(contact===null||!contact.trim()){showToast('Please enter a contact number so the seller can respond.');return}
+ const order={id:Date.now()+Math.floor(Math.random()*1000),itemId:p.id,title:p.title,price:Number(p.price),sellerContact:p.contact||'',buyerName:buyer.trim(),buyerContact:contact.trim(),status:'New request',createdAt:new Date().toLocaleString(),area:p.area||'Lahore',commissionRate:Number(mmBusinessSettings.commissionRate||5),paymentMethod:'Buyer and seller arrange directly'};
+ mmOrders.unshift(order);persistOrders();makeNotification('New buyer request',`${order.buyerName} is interested in “${p.title}” (${money(p.price)}). This request is saved only in this browser preview.`,'request',id);
+ showToast('Buyer request created in this browser preview');goScreen('orders');
+}
+function renderOrders(){
+ const root=$('#ordersList');if(!root)return;root.innerHTML='';const empty=$('#ordersEmpty');if(empty)empty.style.display=mmOrders.length?'none':'block';
+ mmOrders.forEach(o=>{const el=document.createElement('article');el.className='orderRow';const estimate=Math.round(Number(o.price||0)*Number(o.commissionRate??mmBusinessSettings.commissionRate??5)/100);el.innerHTML=`<div><h3>${esc(o.title)} · ${money(o.price)}</h3><p><strong>Buyer:</strong> ${esc(o.buyerName)} · ${esc(o.buyerContact)}</p><p><strong>Area:</strong> ${esc(o.area||'Lahore')} · <strong>Requested:</strong> ${esc(o.createdAt||'Recently')}</p><p><strong>Payment:</strong> ${esc(o.paymentMethod||'Arrange directly')}</p><span class="statusPill">${esc(o.status)}</span><p><strong>Estimated commission if completed:</strong> ${money(estimate)} (${Number(o.commissionRate??mmBusinessSettings.commissionRate??5)}%) — not collected</p></div><div class="orderControls"><select aria-label="Order status" id="orderStatus${o.id}"><option ${o.status==='New request'?'selected':''}>New request</option><option ${o.status==='Confirmed'?'selected':''}>Confirmed</option><option ${o.status==='Completed'?'selected':''}>Completed</option><option ${o.status==='Cancelled'?'selected':''}>Cancelled</option></select><button onclick="updateOrderStatus(${o.id})">Update status</button><button onclick="contactBuyer(${o.id})">Contact buyer</button></div>`;root.appendChild(el)});updateOrderStats();
+}
+function updateOrderStatus(id){const select=$('#orderStatus'+id);if(!select)return;const order=mmOrders.find(o=>o.id===id);if(!order)return;order.status=select.value;persistOrders();if(order.status==='Completed')makeNotification('Order marked completed',`“${order.title}” was marked completed in this browser preview. Estimated commission: ${money(Math.round(order.price*order.commissionRate/100))}.`,'order',order.itemId);renderOrders();showToast('Order status updated in this preview')}
+function contactBuyer(id){const o=mmOrders.find(x=>x.id===id);if(!o)return;const digits=String(o.buyerContact||'').replace(/\D/g,'');if(!digits){showToast('No buyer contact number was supplied');return}const number=digits.startsWith('0')?'92'+digits.slice(1):digits;window.open('https://wa.me/'+number+'?text='+encodeURIComponent(`Hello ${o.buyerName}, regarding your request for ${o.title} on Mughal Marketplace.`),'_blank','noopener')}
+function saveBusinessSettings(){const rate=Number($('#commissionRate').value),fee=Number($('#featuredFee').value);if(!Number.isFinite(rate)||rate<0||rate>30||!Number.isFinite(fee)||fee<0){showToast('Enter a valid commission (0–30%) and fee');return}mmBusinessSettings={commissionRate:rate,featuredFee:fee};try{localStorage.setItem('mm_businessSettings',JSON.stringify(mmBusinessSettings))}catch(e){};$('#businessSettingsStatus').textContent=`Saved on this device only. Example commission: ${rate}%; featured listing fee: ${money(fee)}. Nothing is charged.`;mmOrders=mmOrders.map(o=>({...o,commissionRate:rate}));persistOrders();renderAdmin();showToast('Preview business settings saved')}
+
+function renderNotifications(){
+ const root=$('#notificationList');if(!root)return;root.innerHTML='';
+ if(!notifications.length){root.innerHTML='<div class="empty" style="display:block">No notifications yet. Buyer requests and activity will appear here.</div>';return}
+ notifications.forEach(n=>{const el=document.createElement('article');el.className='notificationItem'+(n.read?'':' unread');el.innerHTML=`<div class="notificationIcon">${n.kind==='request'?'🛍️':'🔔'}</div><div style="flex:1;min-width:0"><h3>${esc(n.title)}</h3><p>${esc(n.message)}</p><small>${esc(n.createdAt||'Recently')}</small></div>${n.read?'':'<button class="markRead" onclick="markNotificationRead('+JSON.stringify(n.id)+')">Mark read</button>'}`;root.appendChild(el)})
+}
+function markNotificationRead(id){notifications=notifications.map(n=>n.id===id?{...n,read:true}:n);saveNotifications();renderNotifications()}
+function markNotificationsRead(){notifications=notifications.map(n=>({...n,read:true}));saveNotifications();renderNotifications();showToast('All notifications marked as read')}
+function clearNotifications(){if(!confirm('Clear all notifications in this browser?'))return;notifications=[];saveNotifications();renderNotifications()}
+function renderSearchPage(){
+ const q=$('#pageSearchInput').value.trim().toLowerCase(),cat=$('#pageSearchCategory').value,sort=$('#pageSortSelect').value;
+ let list=allItems().filter(p=>(cat==='all'||p.category===cat)&&(!q||[p.title,p.category,p.area,p.desc,p.condition].join(' ').toLowerCase().includes(q)));
+ if(sort==='low')list.sort((a,b)=>a.price-b.price);if(sort==='high')list.sort((a,b)=>b.price-a.price);
+ $('#searchResultCount').textContent=`${list.length} item${list.length===1?'':'s'} found`;
+ const grid=$('#searchPageGrid');grid.innerHTML='';$('#searchPageEmpty').style.display=list.length?'none':'block';
+ list.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${p.photo?`<img src="${p.photo}" alt="${esc(p.title)}" loading="lazy">`:`<span class="fallbackEmoji">${p.emoji||'📦'}</span>`}<span class="tag">${esc(p.tag||'Listing')}</span><button class="heart ${saved.has(p.id)?'saved':''}" onclick="toggleSaveFromSearch(${p.id})" aria-label="Save item">${saved.has(p.id)?'♥':'♡'}</button></div><div class="productBody"><div class="prodMeta"><span>${esc(p.category)}</span><span>${esc(p.condition)}</span></div><h3>${esc(p.title)}</h3><p class="desc">${esc(p.desc)}</p><div class="prodMeta"><span>📍 ${esc(p.area||'Lahore')}</span><span>${p.user?'Your listing':p.live?'Live listing':'Sample listing'}</span></div><div class="prodBottom"><span class="prodPrice">${money(p.price)}</span><button class="smallBtn" onclick="contactSeller(${p.id})">Contact</button></div><button class="requestBtn" onclick="requestToBuy(${p.id})">🛍️ Request to buy</button><div class="proActions"><button onclick="viewItem(${p.id})">View details</button><button onclick="shareItem(${p.id})">Share</button><button onclick="reportItem(${p.id})">Report</button></div></div>`;grid.appendChild(el)})
+}
+function toggleSaveFromSearch(id){toggleSave(id);renderSearchPage()}
+function clearSearchPage(){$('#pageSearchInput').value='';$('#pageSearchCategory').value='all';$('#pageSortSelect').value='featured';renderSearchPage()}
+function renderMyListings(){
+ const root=$('#myListingsGrid');if(!root)return;root.innerHTML='';$('#myListingsEmpty').style.display=userItems.length?'none':'block';
+ userItems.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${p.photo?`<img src="${p.photo}" alt="${esc(p.title)}" loading="lazy">`:`<span class="fallbackEmoji">${p.emoji||'📦'}</span>`}<span class="tag">Your listing</span></div><div class="productBody"><div class="prodMeta"><span>${esc(p.category)}</span><span>${esc(p.condition)}</span></div><h3>${esc(p.title)}</h3><p class="desc">${esc(p.desc)}</p><div class="prodBottom"><span class="prodPrice">${money(p.price)}</span><button class="smallBtn" onclick="editListing(${p.id})">✎ Edit</button></div><div class="listingActions"><button onclick="editListing(${p.id})">Edit listing</button><button onclick="deleteListing(${p.id})">Delete listing</button></div></div>`;root.appendChild(el)});
+ updateNotificationCounts()
+}
+$('#pageSearchInput').addEventListener('input',renderSearchPage);
+$('#pageSearchCategory').addEventListener('change',renderSearchPage);
+$('#pageSortSelect').addEventListener('change',renderSearchPage);
+
+
+let recentlyViewed=[];try{recentlyViewed=JSON.parse(localStorage.getItem('mm_recentlyViewed')||'[]')}catch(e){recentlyViewed=[]}
+function saveRecentlyViewed(){try{localStorage.setItem('mm_recentlyViewed',JSON.stringify(recentlyViewed.slice(0,8)))}catch(e){};renderRecentlyViewed()}
+function renderRecentlyViewed(){const sec=$('#recentlyViewedSection'),grid=$('#recentlyViewedGrid');if(!sec||!grid)return;const list=recentlyViewed.map(id=>allItems().find(p=>p.id===id)).filter(Boolean);sec.hidden=!list.length;grid.innerHTML='';list.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${p.photo?`<img src="${p.photo}" alt="${esc(p.title)}" loading="lazy">`:`<span class="fallbackEmoji">${p.emoji||'📦'}</span>`}</div><div class="productBody"><h3>${esc(p.title)}</h3><div class="prodBottom"><span class="prodPrice">${money(p.price)}</span><button class="smallBtn" onclick="viewItem(${p.id})">View</button></div></div>`;grid.appendChild(el)})}
+function clearRecentlyViewed(){recentlyViewed=[];saveRecentlyViewed();showToast('Recently viewed history cleared')}
+function viewItem(id){const p=allItems().find(x=>x.id===id);if(!p)return;recentlyViewed=[id,...recentlyViewed.filter(x=>x!==id)].slice(0,8);saveRecentlyViewed();const root=$('#detailsContent');root.innerHTML=`${p.photo?`<img class="detailHero" src="${p.photo}" alt="${esc(p.title)}">`:`<div class="visualPic" style="font-size:64px;margin-bottom:14px">${p.emoji||'📦'}</div>`}<div class="prodMeta"><span>${esc(p.category)}</span><span>${esc(p.condition)}</span></div><h3 style="font-size:22px;color:var(--ink);margin:8px 0">${esc(p.title)}</h3><div class="detailPrice">${money(p.price)}</div><p>${esc(p.desc)}</p><div class="detailGrid"><div class="detailCell"><strong>Location</strong><span>${esc(p.area||'Lahore')}</span></div><div class="detailCell"><strong>Listing type</strong><span>${p.user?'Your preview listing':p.live?'Live listing':'Demo example'}</span></div></div><div class="notice">Safety tip: inspect the item before paying, meet in a public place, and never share OTPs or banking passwords.</div><button class="primary" style="width:100%;margin-top:12px" onclick="closeDetails();contactSeller(${p.id})">Contact seller on WhatsApp</button><button class="secondary" style="width:100%;margin-top:8px" onclick="closeDetails();requestToBuy(${p.id})">Request to buy</button>`;$('#detailsTitle').textContent='Item details';$('#detailsModal').classList.add('show');document.body.style.overflow='hidden'}
+function closeDetails(){$('#detailsModal').classList.remove('show');document.body.style.overflow=''}
+$('#detailsModal').addEventListener('click',e=>{if(e.target.id==='detailsModal')closeDetails()});
+function shareItem(id){const p=allItems().find(x=>x.id===id);if(!p)return;const shareText=`${p.title} — ${money(p.price)}\n${p.category} · ${p.condition} · ${p.area||'Lahore'}\nFound on Mughal Marketplace`;const url=location.href.split('#')[0]+'#shop';if(navigator.share){navigator.share({title:p.title,text:shareText,url}).catch(()=>{})}else if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(shareText+'\n'+url).then(()=>showToast('Listing details copied to clipboard')).catch(()=>showToast(shareText))}else{showToast(shareText)}}
+let moderationReports=[];try{moderationReports=JSON.parse(localStorage.getItem('mm_reports')||'[]')}catch(e){moderationReports=[]}
+function saveReports(){try{localStorage.setItem('mm_reports',JSON.stringify(moderationReports))}catch(e){}}
+function reportItem(id){const p=allItems().find(x=>x.id===id);if(!p)return;const reason=prompt('Why are you reporting this listing? (e.g. suspicious price, misleading details, prohibited item)');if(reason===null||!reason.trim())return;moderationReports.unshift({id:Date.now()+Math.random(),itemId:id,title:p.title,reason:reason.trim(),createdAt:new Date().toLocaleString(),resolved:false});saveReports();makeNotification('Listing report saved',`Your report about “${p.title}” was recorded in this browser preview. Reason: ${reason.trim()}.`, 'report',id);showToast('Report saved in this preview')}
+function renderAdmin(){
+ $('#adminListingCount').textContent=userItems.length+demoItems.length;$('#adminReportCount').textContent=moderationReports.filter(r=>!r.resolved).length;$('#adminRequestCount').textContent=mmOrders.length; if($('#commissionRate'))$('#commissionRate').value=mmBusinessSettings.commissionRate; if($('#featuredFee'))$('#featuredFee').value=mmBusinessSettings.featuredFee;
+ const rr=$('#adminReports');rr.innerHTML='';const open=moderationReports.filter(r=>!r.resolved);$('#adminReportsEmpty').style.display=open.length?'none':'block';
+ open.forEach(r=>{const el=document.createElement('article');el.className='notificationItem';el.innerHTML=`<div class="notificationIcon">⚑</div><div style="flex:1;min-width:0"><h3>${esc(r.title)}</h3><p>Reason: ${esc(r.reason)}</p><small>${esc(r.createdAt||'Recently')}</small></div><div class="adminActions"><button onclick="reviewReport(${r.id})">Mark reviewed</button><button class="danger" onclick="removeReportedListing(${r.itemId},${r.id})">Remove listing</button></div>`;rr.appendChild(el)});
+ const lr=$('#adminListings');lr.innerHTML='';$('#adminListingsEmpty').style.display=userItems.length?'none':'block';
+ userItems.forEach(item=>{const el=document.createElement('div');el.className='adminListingRow';el.innerHTML=`<div><strong>${esc(item.title)}</strong><small>${money(item.price)} · ${esc(item.area||'Lahore')} · ${esc(item.category)}</small></div><div class="adminActions"><button onclick="editListing(${item.id})">Edit</button><button class="danger" onclick="adminDeleteListing(${item.id})">Remove</button></div>`;lr.appendChild(el)})
+}
+function reviewReport(id){moderationReports=moderationReports.map(r=>r.id===id?{...r,resolved:true}:r);saveReports();renderAdmin();showToast('Report marked reviewed in this preview')}
+function removeReportedListing(itemId,reportId){if(!confirm('Remove this user listing from this browser preview?'))return;userItems=userItems.filter(x=>x.id!==itemId);persist();moderationReports=moderationReports.map(r=>r.id===reportId?{...r,resolved:true}:r);saveReports();renderProducts();renderAdmin();renderMyListings();updateNotificationCounts();showToast('Listing removed from this browser preview')}
+function adminDeleteListing(id){if(!confirm('Remove this listing from this browser preview?'))return;userItems=userItems.filter(x=>x.id!==id);persist();renderProducts();renderAdmin();renderMyListings();updateNotificationCounts();showToast('Listing removed')}
+function openAccount(){let a={};try{a=JSON.parse(localStorage.getItem('mm_profile')||'{}')}catch(e){};$('#profileName').value=a.name||'';$('#profileEmail').value=a.email||'';$('#profilePhone').value=a.phone||'';$('#accountStatus').hidden=true;$('#accountModal').classList.add('show');document.body.style.overflow='hidden'}
+function closeAccount(){$('#accountModal').classList.remove('show');document.body.style.overflow=''}
+$('#accountModal').addEventListener('click',e=>{if(e.target.id==='accountModal')closeAccount()});
+$('#accountForm').addEventListener('submit',e=>{e.preventDefault();const a={name:$('#profileName').value.trim(),email:$('#profileEmail').value.trim(),phone:$('#profilePhone').value.trim()};try{localStorage.setItem('mm_profile',JSON.stringify(a));$('#accountStatus').textContent='Profile saved on this device only. Online accounts are not active in this preview.';$('#accountStatus').hidden=false;makeNotification('Profile updated','Your local profile was saved on this device.','account');showToast('Local profile saved')}catch(err){showToast('Could not save profile in this browser')}});
+function clearAccount(){if(!confirm('Remove the profile saved on this device?'))return;localStorage.removeItem('mm_profile');$('#accountForm').reset();$('#accountStatus').hidden=true;showToast('Local profile removed')}
+function enableBrowserNotifications(){if(!('Notification'in window)){showToast('Browser notifications are not supported here');return}Notification.requestPermission().then(permission=>{if(permission==='granted'){showToast('Browser notifications enabled for this device');new Notification('Mughal Marketplace',{body:'Notifications are enabled on this device.'})}else showToast('Notification permission was not granted')}).catch(()=>showToast('Could not enable notifications'))}
+
+function renderSearchPage(){
+ const q=$('#pageSearchInput').value.trim().toLowerCase(),cat=$('#pageSearchCategory').value,sort=$('#pageSortSelect').value;
+ const min=Number($('#minPriceFilter')?.value||0),max=Number($('#maxPriceFilter')?.value||0),area=($('#areaFilter')?.value||'').trim().toLowerCase();
+ let list=allItems().filter(p=>(cat==='all'||p.category===cat)&&(!q||[p.title,p.category,p.area,p.desc,p.condition].join(' ').toLowerCase().includes(q))&&(!min||p.price>=min)&&(!max||p.price<=max)&&(!area||String(p.area||'').toLowerCase().includes(area)));
+ if(sort==='low')list.sort((a,b)=>a.price-b.price);if(sort==='high')list.sort((a,b)=>b.price-a.price);
+ $('#searchResultCount').textContent=`${list.length} item${list.length===1?'':'s'} found`;const grid=$('#searchPageGrid');grid.innerHTML='';$('#searchPageEmpty').style.display=list.length?'none':'block';
+ list.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${p.photo?`<img src="${p.photo}" alt="${esc(p.title)}" loading="lazy">`:`<span class="fallbackEmoji">${p.emoji||'📦'}</span>`}<span class="tag">${esc(p.tag||'Listing')}</span><button class="heart ${saved.has(p.id)?'saved':''}" onclick="toggleSaveFromSearch(${p.id})" aria-label="Save item">${saved.has(p.id)?'♥':'♡'}</button></div><div class="productBody"><div class="prodMeta"><span>${esc(p.category)}</span><span>${esc(p.condition)}</span></div><h3>${esc(p.title)}</h3><p class="desc">${esc(p.desc)}</p><div class="prodMeta"><span>📍 ${esc(p.area||'Lahore')}</span><span>${p.user?'Your listing':p.live?'Live listing':'Sample listing'}</span></div><div class="prodBottom"><span class="prodPrice">${money(p.price)}</span><button class="smallBtn" onclick="contactSeller(${p.id})">Contact</button></div><button class="requestBtn" onclick="requestToBuy(${p.id})">🛍️ Request to buy</button><div class="proActions"><button onclick="viewItem(${p.id})">View details</button><button onclick="shareItem(${p.id})">Share</button><button onclick="reportItem(${p.id})">Report</button></div></div>`;grid.appendChild(el)})
+}
+for(const id of ['minPriceFilter','maxPriceFilter','areaFilter']){const el=$('#'+id);if(el)el.addEventListener('input',renderSearchPage)}
+$('#year').textContent=new Date().getFullYear();renderProducts();updateNotificationCounts();renderRecentlyViewed();
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script>
+(()=>{'use strict';const $=id=>document.getElementById(id);let db=null,user=null;window.mmSupabaseClient=null;window.mmSupabaseUser=null;const status=t=>{$('mmStatus').textContent=t};const money=n=>'PKR '+Number(n).toLocaleString('en-PK');
+function setUser(u){user=u;window.mmSupabaseUser=u;window.mmSupabaseClient=db;$('mmUser').textContent=u?'Signed in: '+u.email:'Not signed in';$('mmSignout').hidden=!u;$('mmSellerPanel').hidden=!u;$('mmOrdersPanel').hidden=!u;if(u)loadOrders()}
+function normalizeProjectUrl(raw){let u;try{u=new URL(raw.trim())}catch(_){throw new Error('Project URL is invalid. Copy the API URL from Supabase Data API.')}if(u.protocol!=='https:')throw new Error('Project URL must use https://');u.pathname=u.pathname.replace(/\/(rest\/v1|auth\/v1|storage\/v1|realtime\/v1)\/?$/i,'').replace(/\/$/,'');u.search='';u.hash='';return u.origin+u.pathname;}
+async function connect(url,key){if(!window.supabase){status('Could not load Supabase library. Check internet connection and reload.');return}try{url=normalizeProjectUrl(url);if(!key)throw new Error('Publishable key is required.');db=window.supabase.createClient(url,key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});window.mmSupabaseClient=db;const {data,error}=await db.auth.getSession();if(error)throw error;$('mmDbNotice').hidden=true;status('Connected to Supabase. You can now create an account or sign in.');setUser(data.session?.user||null);db.auth.onAuthStateChange((_e,s)=>{setUser(s?.user||null);loadListings()});await loadListings()}catch(e){db=null;status('Connection failed: '+(e.message||String(e))+' — check URL/key and project settings.')}}
+$('mmConnectBtn').onclick=()=>{const url=$('mmProjectUrl').value.trim(),key=$('mmPublicKey').value.trim();if(!url||!key)return status('Enter both the Project URL and public key.');if(!/^https:\/\//i.test(url))return status('Project URL must start with https://');connect(url,key).catch(e=>status('Connection failed: '+(e.message||String(e))))};
+$('mmDisconnectBtn').onclick=()=>{db=null;user=null;setUser(null);$('mmDbNotice').hidden=false;$('mmLiveListings').innerHTML='<p class="sub">Disconnected.</p>';status('Disconnected for this page session.')};
+$('mmSignup').onclick=async()=>{if(!db)return status('Connect Supabase first.');const email=$('mmEmail').value.trim(),password=$('mmPassword').value;if(!email||password.length<8)return status('Enter a valid email and password of at least 8 characters.');const btn=$('mmSignup');btn.disabled=true;status('Creating account…');try{const {data,error}=await db.auth.signUp({email,password});status(error?'Sign-up failed: '+error.message:(data.session?'Account created and signed in.':'Account request submitted. If email confirmation is enabled, check your inbox.'));}catch(e){status('Sign-up failed: '+(e.message||String(e))+' — check the Project URL and try again.')}finally{btn.disabled=false}};
+$('mmSignin').onclick=async()=>{if(!db)return status('Connect Supabase first.');const email=$('mmEmail').value.trim(),password=$('mmPassword').value;if(!email||!password)return status('Enter your email and password.');try{const {error}=await db.auth.signInWithPassword({email,password});status(error?'Sign-in failed: '+error.message:'Signed in successfully.')}catch(e){status('Sign-in failed: '+(e.message||String(e)))}};
+$('mmSignout').onclick=async()=>{if(db)await db.auth.signOut();setUser(null);status('Signed out.')};$('mmRefresh').onclick=loadListings;
+$('mmListingForm').onsubmit=async e=>{e.preventDefault();if(!db||!user)return status('Connect and sign in first.');const row={seller_id:user.id,title:$('mmTitle').value.trim(),category:$('mmCategory').value,price_paisa:Math.round(Number($('mmPrice').value)*100),city:$('mmCity').value.trim(),description:$('mmDescription').value.trim(),status:'active'};if(row.price_paisa<100)return status('Enter a valid price.');const {error}=await db.from('listings').insert(row);if(error)return status('Could not publish: '+error.message);e.target.reset();status('Listing published to the database.');await loadListings()};
+async function loadListings(){if(!db)return;const box=$('mmLiveListings');box.innerHTML='<p class="sub">Loading live listings…</p>';const {data,error}=await db.from('listings').select('id,title,category,price_paisa,city,description,seller_id,created_at').eq('status','active').order('created_at',{ascending:false}).limit(60);if(error){box.textContent='Could not load listings: '+error.message;return}box.innerHTML='';if(!data?.length){box.innerHTML='<p class="sub">No live listings yet. Publish the first item after signing in.</p>';return}for(const x of data){const c=document.createElement('article');c.className='product';const b=document.createElement('div');b.className='productBody';const h=document.createElement('h3');h.textContent=x.title;const p=document.createElement('strong');p.className='prodPrice';p.textContent=money(x.price_paisa/100);const meta=document.createElement('p');meta.className='desc';meta.textContent='📍 '+x.city+' · '+x.category;const d=document.createElement('p');d.className='desc';d.textContent=x.description||'No description provided.';b.append(h,p,meta,d);if(user&&user.id!==x.seller_id){const btn=document.createElement('button');btn.className='requestBtn';btn.textContent='Request to buy';btn.onclick=()=>requestOrder(x);b.append(btn)}c.append(b);box.append(c)}}
+async function requestOrder(x){if(!db||!user)return status('Sign in to request an order.');const note=prompt('Optional message to seller:','Hi, is this item available?');if(note===null)return;const {error}=await db.from('orders').insert({listing_id:x.id,buyer_id:user.id,seller_id:x.seller_id,amount_paisa:x.price_paisa,status:'requested',buyer_message:note});status(error?'Order request failed: '+error.message:'Order request sent.');if(!error)loadOrders()}
+async function loadOrders(){if(!db||!user)return;const box=$('mmOrders');box.textContent='Loading…';const {data,error}=await db.from('orders').select('id,status,amount_paisa,buyer_message,created_at,listing_id').order('created_at',{ascending:false}).limit(50);if(error){box.textContent='Orders unavailable: '+error.message;return}box.innerHTML='';if(!data?.length){box.textContent='No order requests yet.';return}for(const o of data){const p=document.createElement('p');p.textContent=money(o.amount_paisa/100)+' · '+o.status+' · '+(o.buyer_message||'No message');box.append(p)}}
+})();</script>
+<script id="mm-frontend-upgrade">
+/* Mughal Marketplace frontend upgrade.
+   Local preview features work in this browser only. Live multi-user actions still require
+   the project's Supabase schema, Storage bucket, RLS policies and deployment settings. */
+(function(){
+  const $ = s => document.querySelector(s);
+  const safeText = s => String(s ?? '').trim();
+  function findOwnItem(id){ return (Array.isArray(userItems) ? userItems : []).find(x => String(x.id) === String(id)); }
+
+  // Repair the existing Edit/Delete controls that previously called missing functions.
+  window.editListing = function(id){
+    const p = findOwnItem(id);
+    if(!p){ showToast('Only your own preview listings can be edited.'); return; }
+    const form = $('#sellForm');
+    form.dataset.editId = String(p.id);
+    $('#itemTitle').value = p.title || '';
+    $('#itemPrice').value = Number(p.price || 0);
+    $('#itemCategory').value = p.category || 'Other';
+    $('#itemCondition').value = p.condition || 'Good';
+    $('#itemArea').value = p.area || '';
+    $('#itemContact').value = p.contact || '';
+    $('#itemDesc').value = p.desc || '';
+    $('#itemPhoto').value = '';
+    $('#modalTitle').textContent = 'Edit your listing';
+    form.querySelector('button[type="submit"]').textContent = 'Save changes';
+    $('#sellModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.deleteListing = function(id){
+    const p = findOwnItem(id);
+    if(!p) return showToast('That preview listing could not be found.');
+    if(!confirm('Delete "' + p.title + '" from this browser preview?')) return;
+    userItems = userItems.filter(x => String(x.id) !== String(id));
+    try { persist(); } catch(e) {}
+    try { renderProducts(); renderMyListings(); renderAdmin(); renderSearchPage(); updateNotificationCounts(); } catch(e) {}
+    showToast('Listing deleted from this browser preview.');
+  };
+
+  // Avoid sending buyers to a hard-coded number when a sample or listing has no seller contact.
+  window.contactSeller = function(id){
+    const p = allItems().find(x => String(x.id) === String(id));
+    if(!p) return;
+    if(!p.user && !p.contact){
+      showToast('This is a sample item; it has no real seller contact.');
+      return;
+    }
+    const digits = safeText(p.contact).replace(/\D/g,'');
+    if(!digits){
+      showToast('This listing has no seller WhatsApp number. Ask the seller to add one.');
+      return;
+    }
+    const number = digits.startsWith('0') ? '92' + digits.slice(1) : digits;
+    if(number.length < 10 || number.length > 15){
+      showToast('The seller contact number does not look valid.');
+      return;
+    }
+    const message = `Hello, I'm interested in "${p.title}" listed for ${money(p.price)} on Mughal Marketplace. Is it still available?`;
+    window.open('https://wa.me/' + number + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+  };
+
+  // Improve photo validation and warn before large local previews exhaust browser storage.
+  const photo = $('#itemPhoto');
+  if(photo){
+    photo.setAttribute('accept','image/jpeg,image/png,image/webp');
+    photo.addEventListener('change', function(){
+      const f = this.files && this.files[0];
+      if(!f) return;
+      if(!/^image\/(jpeg|png|webp)$/.test(f.type)){
+        this.value = '';
+        showToast('Please choose a JPG, PNG, or WebP image.');
+        return;
+      }
+      if(f.size > 5 * 1024 * 1024){
+        this.value = '';
+        showToast('Please choose an image smaller than 5 MB.');
+        return;
+      }
+      if(f.size > 2 * 1024 * 1024){
+        showToast('Large photo selected. For this local preview, choose a smaller image to avoid browser storage limits.');
+      }
+    });
+  }
+
+  // Add a clear, persistent local-only status notice to the database section.
+  const dbNotice = $('#mmDbNotice');
+  if(dbNotice && !document.getElementById('mmLaunchNote')){
+    const note = document.createElement('p');
+    note.id = 'mmLaunchNote';
+    note.className = 'notice';
+    note.style.marginTop = '10px';
+    note.textContent = 'One-time setup required: run the supplied Mughal_Marketplace_Supabase_Setup.sql in Supabase SQL Editor to create/secure the expected tables and photo bucket. Then enter your Project URL + public publishable/anon key, connect, and sign in. Never put a service-role secret key in this page.';
+    dbNotice.insertAdjacentElement('afterend', note);
+  }
+
+  // Give local demo content a visible label so sample listings aren't mistaken for real offers.
+  const grid = $('#productGrid');
+  if(grid && !document.getElementById('mmDemoDisclaimer')){
+    const note = document.createElement('div');
+    note.id = 'mmDemoDisclaimer';
+    note.className = 'notice';
+    note.style.margin = '0 0 16px';
+    note.textContent = 'Preview mode: sample products and browser-saved listings are not shared with other visitors. Live marketplace listings will be enabled after the existing database is connected and secured.';
+    grid.parentNode.insertBefore(note, grid);
+  }
+
+  // Keep account-modal backdrop/scroll state consistent after closing with Escape.
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      try { closeDetails(); closeSell(); closeAccount(); } catch(err) {}
+    }
+  });
+})();
+</script>
+
+
+<script id="mm-multipage-routing">
+/* Page-style navigation: each main section has its own hash URL and only that page is shown. */
+(function(){
+  const routeIds = {
+    home: 'heroSection',
+    search: 'searchScreen',
+    notifications: 'notificationsScreen',
+    myListings: 'myListingsScreen',
+    orders: 'ordersScreen',
+    admin: 'adminScreen',
+    policies: 'policiesScreen',
+    categories: 'categories',
+    shop: 'shop',
+    how: 'how',
+    safety: 'safety',
+    faq: 'faq',
+    live: 'liveMarketplaceBackend'
+  };
+  const routeLabels = {
+    home:'Home', search:'Search', notifications:'Notifications',
+    myListings:'My listings', orders:'Orders', admin:'Admin',
+    policies:'Policies', categories:'Categories', shop:'Browse listings',
+    how:'How it works', safety:'Safety tips', faq:'FAQ', live:'Database connection'
+  };
+  function routeFromHash(){
+    const key = (location.hash || '#home').slice(1);
+    return routeIds[key] ? key : 'home';
+  }
+  function showPage(name, updateHash){
+    if(!routeIds[name]) name='home';
+    const root=document.getElementById('home');
+    if(root){
+      root.querySelectorAll(':scope > section').forEach(section=>{
+        section.hidden = section.id !== routeIds[name];
+      });
+    }
+    document.querySelectorAll('.navtab').forEach(btn=>{
+      const m=(btn.getAttribute('onclick')||'').match(/goScreen\('([^']+)'\)/);
+      btn.classList.toggle('active', !!m && m[1]===name);
+    });
+    if(updateHash && location.hash !== '#'+name){
+      history.pushState({page:name},'', '#'+name);
+    }
+    window.scrollTo({top:0,behavior:'auto'});
+    if(name==='search' && typeof renderSearchPage==='function') renderSearchPage();
+    if(name==='notifications' && typeof renderNotifications==='function') renderNotifications();
+    if(name==='myListings' && typeof renderMyListings==='function') renderMyListings();
+    if(name==='orders' && typeof renderOrders==='function') renderOrders();
+    if(name==='admin' && typeof renderAdmin==='function') renderAdmin();
+    if(name==='policies' && typeof renderPolicies==='function') renderPolicies();
+    if(name==='categories'){
+      const categories=document.getElementById('categories');
+      if(categories) categories.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat===(window.activeCategory||'all')));
+    }
+    document.title = (routeLabels[name] || 'Mughal Marketplace') + ' | Mughal Marketplace';
+  }
+  window.goScreen = function(name){ showPage(name, true); };
+  window.openPage = function(name){ showPage(name, true); };
+  window.addEventListener('hashchange',()=>showPage(routeFromHash(),false));
+  window.addEventListener('popstate',()=>showPage(routeFromHash(),false));
+
+  // Make every section-style navigation link open its own page instead of jumping down one long page.
+  document.addEventListener('click',function(e){
+    const a=e.target.closest('a[href^="#"]');
+    if(!a) return;
+    const raw=a.getAttribute('href').slice(1);
+    if(!raw || raw==='') return;
+    const aliases = {
+      home:'home', heroSection:'home',
+      search:'search', shop:'shop', categories:'categories',
+      how:'how', safety:'safety', faq:'faq',
+      notifications:'notifications', myListings:'myListings',
+      orders:'orders', admin:'admin', policies:'policies',
+      liveMarketplaceBackend:'live'
+    };
+    const route=aliases[raw];
+    if(route){
+      e.preventDefault();
+      showPage(route,true);
+    }
+  });
+
+  // Route footer links that were previously just scrolling to anchors.
+  document.querySelectorAll('a[href="#"]').forEach(a=>{
+    const t=(a.textContent||'').toLowerCase();
+    if(t.includes('policy') || t.includes('privacy') || t.includes('terms')){
+      a.href='#policies';
+    } else if(t.includes('admin')){
+      a.href='#admin';
+    }
+  });
+
+  // Initial route is directly addressable and refresh-safe.
+  const initial=routeFromHash();
+  showPage(initial,false);
+})();
+</script>
+
+
+<script id="mm-mobile-menu-fix">
+(function(){
+ const overlay=document.getElementById('mobileMenuOverlay');
+ const trigger=document.querySelector('.menuBtn');
+ window.toggleMobileMenu=function(){
+  if(!overlay)return;
+  const open=overlay.hidden;
+  overlay.hidden=!open;
+  if(trigger)trigger.setAttribute('aria-expanded',String(open));
+  document.body.style.overflow=open?'hidden':'';
+ };
+ window.closeMobileMenu=function(){
+  if(!overlay)return;
+  overlay.hidden=true;
+  if(trigger)trigger.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+ };
+ window.mobileNavigate=function(page){
+  closeMobileMenu();
+  if(typeof window.goScreen==='function')window.goScreen(page);
+  else location.hash='#'+page;
+ };
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMobileMenu();});
+})();
+</script>
+
+<script id="mm-final-live-publish-bridge">
+(function(){
+  const $=id=>document.getElementById(id);
+  const money=n=>'PKR '+Number(n||0).toLocaleString('en-PK');
+  const safe=(s)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function notice(msg){if(typeof showToast==='function')showToast(msg);const s=$('mmStatus');if(s)s.textContent=msg;}
+  async function loadLiveIntoShop(){
+    const db=window.mmSupabaseClient;if(!db)return;
+    const grid=$('productGrid');if(!grid)return;
+    grid.querySelectorAll('[data-live-supabase="1"]').forEach(n=>n.remove());
+    const {data,error}=await db.from('listings').select('id,title,category,price_paisa,city,area,description,condition,image_url,seller_id,created_at').eq('status','active').order('created_at',{ascending:false}).limit(60);
+    if(error){notice('Database connected, but listings could not load: '+error.message);return;}
+    (data||[]).forEach(x=>{
+      const el=document.createElement('article');el.className='product';el.dataset.liveSupabase='1';
+      const photo=document.createElement('div');photo.className='productPhoto';
+      if(x.image_url){const img=document.createElement('img');img.src=x.image_url;img.alt=x.title||'Listing photo';img.loading='lazy';img.style.cssText='width:100%;height:100%;object-fit:cover';photo.appendChild(img);}else{photo.textContent='📦';}
+      const tag=document.createElement('span');tag.className='tag';tag.textContent='Live listing';photo.appendChild(tag);
+      const body=document.createElement('div');body.className='productBody';
+      const meta=document.createElement('div');meta.className='prodMeta';const cat=document.createElement('span');cat.textContent=x.category||'Other';const cond=document.createElement('span');cond.textContent=x.condition||'Used';meta.append(cat,cond);
+      const title=document.createElement('h3');title.textContent=x.title||'Untitled listing';
+      const desc=document.createElement('p');desc.className='desc';desc.textContent=x.description||'No description provided.';
+      const area=document.createElement('p');area.className='desc';area.textContent='📍 '+(x.area||x.city||'Lahore');
+      const bottom=document.createElement('div');bottom.className='prodBottom';const price=document.createElement('strong');price.className='prodPrice';price.textContent=money((x.price_paisa||0)/100);bottom.append(price);
+      if(window.mmSupabaseUser && window.mmSupabaseUser.id!==x.seller_id){const b=document.createElement('button');b.className='smallBtn';b.textContent='Request to buy';b.onclick=async()=>{const client=window.mmSupabaseClient,user=window.mmSupabaseUser;if(!client||!user)return notice('Connect and sign in first.');const msg=prompt('Message to seller (optional):','Hello, is this item available?');if(msg===null)return;const {error}=await client.from('orders').insert({listing_id:x.id,buyer_id:user.id,seller_id:x.seller_id,amount_paisa:x.price_paisa,status:'requested',buyer_message:msg});notice(error?'Order request failed: '+error.message:'Order request sent.');};bottom.appendChild(b);}
+      body.append(meta,title,desc,area,bottom);el.append(photo,body);grid.appendChild(el);
+    });
+  }
+  window.mmReloadLiveListings=loadLiveIntoShop;
+  // Use Supabase for the existing main Sell form when connected and signed in. Otherwise preserve preview mode.
+  const form=$('sellForm');
+  if(form)form.addEventListener('submit',async function(e){
+    const db=window.mmSupabaseClient,user=window.mmSupabaseUser;
+    if(!db)return; // Existing local preview behavior if no database connection.
+    e.preventDefault();e.stopImmediatePropagation();
+    if(!user){notice('پہلے نیچے Account والے حصے سے Sign in کریں، پھر اشتہار شائع کریں۔');return;}
+    const submit=form.querySelector('button[type="submit"]');if(submit){submit.disabled=true;submit.textContent='Publishing…';}
+    try{
+      const title=$('itemTitle').value.trim(),price=Number($('itemPrice').value),category=$('itemCategory').value,condition=$('itemCondition').value,area=$('itemArea').value.trim(),contact=$('itemContact').value.trim(),description=$('itemDesc').value.trim(),file=$('itemPhoto').files?.[0];
+      if(!title||!Number.isFinite(price)||price<=0||!description)throw new Error('نام، درست قیمت اور تفصیل درج کریں۔');
+      let image_url=null;
+      if(file){
+        if(!/^image\/(jpeg|png|webp)$/.test(file.type))throw new Error('تصویر JPG، PNG یا WebP ہونی چاہیے۔');
+        if(file.size>5*1024*1024)throw new Error('تصویر 5 MB سے چھوٹی ہونی چاہیے۔');
+        const ext=file.type==='image/png'?'png':file.type==='image/webp'?'webp':'jpg';
+        const path=user.id+'/'+Date.now()+'-'+Math.random().toString(36).slice(2)+'.'+ext;
+        const up=await db.storage.from('listing-images').upload(path,file,{upsert:false,contentType:file.type});
+        if(up.error)throw new Error('تصویر اپ لوڈ نہیں ہوئی: '+up.error.message);
+        image_url=db.storage.from('listing-images').getPublicUrl(path).data.publicUrl;
+      }
+      const row={seller_id:user.id,title,category,condition,price_paisa:Math.round(price*100),city:'Lahore',area:area||null,contact_number:contact||null,description,image_url,status:'active'};
+      const {error}=await db.from('listings').insert(row);if(error)throw new Error('اشتہار محفوظ نہیں ہوا: '+error.message);
+      form.reset();if(typeof closeSell==='function')closeSell();notice('آپ کا اشتہار ڈیٹابیس میں شائع ہو گیا ہے۔');await loadLiveIntoShop();
+    }catch(err){notice(err.message||'اشتہار شائع نہیں ہو سکا۔');}
+    finally{if(submit){submit.disabled=false;submit.textContent='Create preview listing';}}
+  },true);
+  // Add a small direct link from the main status panel to the live list refresh action.
+  const refresh=$('mmRefresh');if(refresh){const old=refresh.onclick;refresh.onclick=async()=>{if(old)await old();await loadLiveIntoShop();};}
+  document.addEventListener('DOMContentLoaded',()=>loadLiveIntoShop());
+  setTimeout(()=>loadLiveIntoShop(),1200);
+})();
+</script>
+
+<script>
+/* ====== SETTINGS: paste your Supabase public values here (never the service_role key) ====== */
+window.MM_CONFIG={url:'',key:'',email:'',whatsapp:'923004370691'};
+</script>
+<style id="mm-v2-css">
+[data-live-supabase="1"]{display:none!important}
+body:not(.is-admin) .navtab[onclick*="'admin'"],body:not(.is-admin) a[href="#admin"],body:not(.is-admin) .footerLinks a[onclick*="admin"]{display:none!important}
+#mmMore{display:none;margin:14px auto}
+</style>
+<script id="mm-v2">
+(function(){
+const C=Object.assign({url:'',key:'',email:'',whatsapp:'923004370691'},window.MM_CONFIG||{});
+const $=s=>document.querySelector(s),T=id=>document.getElementById(id),toast=m=>showToast(m);
+let db=null,user=null,isAdmin=false,page=0,more=false,liveItems=[],mine=[],orders=[];
+const PS=48,BASE=1e9,idMap=new Map(),nid=r=>{if(!idMap.has(r))idMap.set(r,BASE+idMap.size+1);return idMap.get(r)};
+const CAT={'Phones & Electronics':'Electronics','Books & Education':'Books & Study'};
+const EM={Electronics:'📱','Home & Furniture':'🪑',Fashion:'👟','Books & Study':'📚','Sports & Hobbies':'⚽',Vehicles:'🚗',Other:'📦'};
+const toItem=x=>{const c=CAT[x.category]||x.category||'Other';return{id:nid(x.id),liveId:x.id,live:true,title:x.title,category:c,price:x.price_paisa/100,condition:x.condition||'Used',area:x.area||x.city||'Lahore',desc:x.description||'',emoji:EM[c]||'📦',photo:x.image_url||'',tag:x.featured?'⭐ Featured':'Live listing',contact:x.contact_number||'',seller:x.seller_id}};
+window.allItems=()=>[...userItems,...liveItems,...demoItems];
+const get=id=>allItems().find(x=>x.id===id);
+
+/* ---- Vehicles category + tidy live panel ---- */
+['pageSearchCategory','searchCategory','itemCategory'].forEach(i=>{const s=T(i);if(s&&![...s.options].some(o=>o.text==='Vehicles'))s.add(new Option('Vehicles','Vehicles'),s.options.length-1)});
+const cg=$('#categories .categories');if(cg){const b=document.createElement('button');b.className='cat';b.dataset.cat='Vehicles';b.onclick=()=>setCategory('Vehicles');b.innerHTML='<div class="catIcon">🚗</div><strong>Vehicles</strong><small>Cars & bikes</small>';cg.appendChild(b)}
+const lf=T('mmListingForm');if(lf){lf.hidden=true;const b=document.createElement('button');b.className='primary';b.textContent='＋ Sell an item';b.onclick=openSell;lf.after(b)}
+if(C.url&&C.key){['mmDbNotice','mmLaunchNote','mmConnectBtn','mmDisconnectBtn'].forEach(i=>{const e=T(i);if(e)e.style.display='none'});const g=T('mmProjectUrl');if(g)g.closest('.formgrid').style.display='none';T('mmProjectUrl').value=C.url;T('mmPublicKey').value=C.key;T('mmConnectBtn').click()}
+const mm=$('.mobileMenuLinks button[onclick*="live"]');if(mm)mm.textContent='👤 Sign in / Create account';
+[['mmForgot','Forgot password?',forgot],['mmResend','Resend verification email',resend]].forEach(([id,t,fn])=>{const b=document.createElement('button');b.id=id;b.type='button';b.className='secondary';b.textContent=t;b.onclick=fn;T('mmSignout').after(b)});
+const pol=T('policiesScreen');if(pol){const d=document.createElement('div');d.className='policyCard';d.innerHTML='<h3>About & contact</h3><p>Mughal Marketplace is a community marketplace for pre-loved items in Lahore, Pakistan. We do not process payments: buyers and sellers agree on payment and handover directly.</p><p><a href="https://wa.me/'+C.whatsapp+'" target="_blank" rel="noopener"><strong>WhatsApp us</strong></a>'+(C.email?' · <a href="mailto:'+C.email+'"><strong>'+C.email+'</strong></a>':'')+'</p>';pol.firstElementChild.insertBefore(d,pol.querySelector('.notice'))}
+const mb=document.createElement('button');mb.id='mmMore';mb.className='secondary';mb.textContent='Load more';mb.onclick=()=>loadLive(false);T('productGrid').after(mb);
+
+/* ---- connect + auth state ---- */
+const iv=setInterval(()=>{if(window.mmSupabaseClient){clearInterval(iv);db=window.mmSupabaseClient;db.auth.onAuthStateChange((ev,s)=>{user=s?.user||null;setTimeout(()=>{if(ev==='PASSWORD_RECOVERY')recover();onUser()},0)});db.auth.getSession().then(({data})=>{user=data.session?.user||null;onUser()})}},500);
+setInterval(()=>{if(db&&user)loadOrders(true)},45000);
+async function onUser(){isAdmin=false;if(user){const {data}=await db.from('profiles').select('is_admin').eq('id',user.id).maybeSingle();isAdmin=!!data?.is_admin}document.body.classList.toggle('is-admin',isAdmin);loadLive();loadMine();loadOrders(true);if(isAdmin)loadAdmin()}
+
+/* ---- live listings: merged into Home + Search ---- */
+async function loadLive(reset=true){if(!db)return;if(reset){page=0;liveItems=[]}
+ const {data,error}=await db.from('listings').select('*').eq('status','active').or('expires_at.is.null,expires_at.gt.'+new Date().toISOString()).order('featured',{ascending:false}).order('created_at',{ascending:false}).range(page*PS,page*PS+PS-1);
+ if(error){toast('Could not load listings: '+error.message);return}
+ liveItems.push(...data.map(toItem));more=data.length===PS;page++;renderProducts();if(!T('searchScreen').hidden)renderSearchPage();mb.style.display=more?'block':'none'}
+T('sellForm').addEventListener('submit',()=>setTimeout(()=>{loadLive();loadMine()},2000));
+const mr=T('mmRefresh');if(mr)mr.addEventListener('click',()=>loadLive());
+document.addEventListener('submit',e=>{if(e.target.id==='sellForm'){const c=T('itemContact').value.trim().replace(/[\s-]/g,'');if(c&&!/^(\+?92|0)3\d{9}$/.test(c)){e.preventDefault();e.stopImmediatePropagation();toast('Enter a valid Pakistani mobile number, e.g. 03001234567')}}},true);
+
+window.requestToBuy=(rb=>async id=>{const p=get(id);if(!p||!p.live)return rb(id);if(!db||!user){toast('Please sign in first (Account section).');goScreen('live');return}if(p.seller===user.id){toast('This is your own listing.');return}const m=prompt('Message to seller (optional):','Hello, is this item available?');if(m===null)return;const pm=(prompt('Preferred payment (arranged directly with the seller):\n1 Cash  2 Easypaisa  3 JazzCash  4 Bank transfer','1')||'1').trim();const PMS={'1':'Cash','2':'Easypaisa','3':'JazzCash','4':'Bank transfer'};const {error}=await db.from('orders').insert({payment_method:PMS[pm]||'Cash',listing_id:p.liveId,buyer_id:user.id,seller_id:p.seller,amount_paisa:Math.round(p.price*100),status:'requested',buyer_message:m.slice(0,300)});toast(error?'Request failed: '+error.message:'Request sent to seller');if(!error){loadOrders(false);goScreen('orders')}})(window.requestToBuy);
+window.contactSeller=(cs=>id=>{const p=get(id);if(!p||!p.live)return cs(id);const d=(p.contact||'').replace(/\D/g,'');if(!d){toast('Seller has no WhatsApp number. Use “Request to buy”.');return}const n=d[0]==='0'?'92'+d.slice(1):d;window.open('https://wa.me/'+n+'?text='+encodeURIComponent('Hello, I am interested in "'+p.title+'" ('+money(p.price)+') on Mughal Marketplace. Is it available?'),'_blank','noopener,noreferrer')})(window.contactSeller);
+window.reportItem=(rp=>async id=>{const p=get(id);if(!p||!p.live||!db)return rp(id);const r=prompt('Why are you reporting this listing?');if(!r||!r.trim())return;const {error}=await db.from('reports').insert({listing_id:p.liveId,reason:r.trim().slice(0,300)});toast(error?error.message:'Report sent to moderators')})(window.reportItem);
+window.viewItem=(vi=>async id=>{vi(id);const p=get(id);if(p&&p.live&&db){const {data}=await db.from('seller_ratings').select('avg,n').eq('seller_id',p.seller).maybeSingle();if(data&&data.n){const d=document.createElement('p');d.textContent='⭐ Seller rating: '+Number(data.avg).toFixed(1)+' ('+data.n+' reviews)';T('detailsContent').prepend(d)}}})(window.viewItem);
+
+/* ---- my live listings: edit / sold / renew / delete ---- */
+async function loadMine(){if(!db||!user){mine=[];renderMine();return}const {data}=await db.from('listings').select('*').eq('seller_id',user.id).neq('status','removed').order('created_at',{ascending:false});mine=data||[];renderMine()}
+function holder(sc,id,h,cls){let b=T(id);if(!b){const s=T(sc);if(!s)return null;const w=document.createElement('div');w.innerHTML='<h3 style="margin:26px 0 12px">'+h+'</h3><div class="'+cls+'" id="'+id+'"></div>';s.firstElementChild.appendChild(w);b=T(id)}b.innerHTML='';return b}
+function renderMine(){const box=holder('myListingsScreen','myLiveGrid','Your live listings','products');if(!box)return;
+ if(!mine.length){box.innerHTML='<div class="empty" style="display:block">'+(user?'No live listings yet.':'Sign in to see your live listings.')+'</div>';return}
+ mine.forEach(x=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="productPhoto">${x.image_url?`<img src="${esc(x.image_url)}" alt="">`:'<span class="fallbackEmoji">'+(EM[CAT[x.category]||x.category]||'📦')+'</span>'}<span class="tag">${esc(x.status)}</span></div><div class="productBody"><h3>${esc(x.title)}</h3><div class="prodPrice">${money(x.price_paisa/100)}</div><p class="desc">Expires: ${x.expires_at?new Date(x.expires_at).toLocaleDateString():'—'}</p><div class="listingActions"><button data-a="e">Edit</button><button data-a="s">${x.status==='sold'?'Relist':'Mark sold'}</button><button data-a="r">Renew 60 days</button><button data-a="d">Delete</button></div></div>`;el.querySelector('.listingActions').onclick=e=>{if(e.target.dataset.a)act(x,e.target.dataset.a)};box.appendChild(el)})}
+async function act(x,a){let r;
+ if(a==='e'){const t=prompt('Title',x.title);if(t===null)return;const p=prompt('Price (PKR)',x.price_paisa/100);if(p===null)return;const d=prompt('Description',x.description||'');if(d===null)return;const pp=Math.round(Number(p)*100);r=await db.from('listings').update({title:t.trim()||x.title,price_paisa:pp>=100?pp:x.price_paisa,description:d}).eq('id',x.id)}
+ if(a==='s')r=await db.from('listings').update({status:x.status==='sold'?'active':'sold'}).eq('id',x.id);
+ if(a==='r')r=await db.from('listings').update({expires_at:new Date(Date.now()+60*864e5).toISOString()}).eq('id',x.id);
+ if(a==='d'){if(!confirm('Delete this listing permanently?'))return;r=await db.from('listings').delete().eq('id',x.id)}
+ toast(r.error?r.error.message:'Done');loadMine();loadLive()}
+
+/* ---- live orders (buyer + seller), status updates, ratings, in-app alerts ---- */
+async function loadOrders(notify){if(!db||!user){orders=[];renderOrdersLive();return}
+ const {data,error}=await db.from('orders').select('id,status,amount_paisa,buyer_message,payment_method,created_at,buyer_id,seller_id,listing_id,listings(title)').order('created_at',{ascending:false}).limit(100);if(error)return;orders=data||[];
+ let s;try{s=JSON.parse(localStorage.getItem('mm_seen'))}catch(e){}const first=!s;s=s||{};
+ orders.forEach(o=>{const k=s[o.id],t=o.listings?.title||'item';if(!first&&notify){if(k===undefined&&o.seller_id===user.id)makeNotification('New buyer request','New request for “'+t+'” ('+money(o.amount_paisa/100)+').','request');else if(k!==undefined&&k!==o.status&&o.buyer_id===user.id)makeNotification('Request '+o.status,'Your request for “'+t+'” is now '+o.status+'.','order')}s[o.id]=o.status});
+ try{localStorage.setItem('mm_seen',JSON.stringify(s))}catch(e){}updateNotificationCounts();renderOrdersLive()}
+function renderOrdersLive(){const box=holder('ordersScreen','mmLiveOrders','Live order requests','notificationList');if(!box)return;
+ if(!orders.length){box.innerHTML='<div class="empty" style="display:block">'+(user?'No live requests yet.':'Sign in to see live requests.')+'</div>';return}
+ orders.forEach(o=>{const seller=o.seller_id===user.id,el=document.createElement('article');el.className='orderRow';el.innerHTML=`<div><h3>${esc(o.listings?.title||'Listing')} · ${money(o.amount_paisa/100)}</h3><p>${seller?'You are the seller':'You are the buyer'} · ${new Date(o.created_at).toLocaleString()}</p><p>${esc(o.buyer_message||'')}</p><p>Payment: ${esc(o.payment_method||'Cash')}</p><span class="statusPill">${esc(o.status)}</span></div><div class="orderControls"></div>`;const c=el.querySelector('.orderControls');
+  if(seller){const s=document.createElement('select');['requested','confirmed','completed','cancelled'].forEach(v=>s.add(new Option(v,v,false,v===o.status)));const b=document.createElement('button');b.textContent='Update status';b.onclick=async()=>{const {error}=await db.from('orders').update({status:s.value}).eq('id',o.id);toast(error?error.message:'Status updated');loadOrders(false)};c.append(s,b)}
+  else if(o.status==='completed'){const b=document.createElement('button');b.textContent='⭐ Rate seller';b.onclick=async()=>{const r=Number(prompt('Rate the seller 1–5'));if(!(r>=1&&r<=5))return;const cm=prompt('Comment (optional)','')||'';const {error}=await db.from('reviews').insert({order_id:o.id,seller_id:o.seller_id,rating:Math.round(r),comment:cm.slice(0,300)});toast(error?'Could not save review: '+error.message:'Thanks for your review')};c.append(b)}
+  const cb=document.createElement('button');cb.textContent='💬 Chat';cb.onclick=()=>chat(o,el);c.append(cb);box.appendChild(el)})}
+async function chat(o,el){let p=el.querySelector('.mmChat');if(p){p.remove();return}p=document.createElement('div');p.className='mmChat';p.style.cssText='grid-column:1/-1;margin-top:10px;width:100%';p.innerHTML='<div class="log" style="max-height:200px;overflow:auto;display:grid;gap:6px"></div><div style="display:flex;gap:6px;margin-top:8px"><input placeholder="Type a message" maxlength="500" style="flex:1"><button>Send</button></div>';el.appendChild(p);const log=p.querySelector('.log'),inp=p.querySelector('input');
+const load=async()=>{if(!p.isConnected)return;const {data}=await db.from('messages').select('sender_id,body').eq('order_id',o.id).order('created_at');log.innerHTML='';(data||[]).forEach(m=>{const d=document.createElement('div');d.style.cssText='padding:7px 10px;border-radius:12px;max-width:85%;background:'+(m.sender_id===user.id?'#dfeee3;justify-self:end':'#eee;justify-self:start');d.textContent=m.body;log.appendChild(d)});log.scrollTop=1e9};
+const iv2=setInterval(()=>p.isConnected?load():clearInterval(iv2),5000);
+p.querySelector('button').onclick=async()=>{const b=inp.value.trim();if(!b)return;inp.value='';const {error}=await db.from('messages').insert({order_id:o.id,sender_id:user.id,body:b});if(error)toast(error.message);load()};load()}
+
+/* ---- admin: server-checked (profiles.is_admin + RLS) ---- */
+async function loadAdmin(){if(!isAdmin)return;let box=T('adminLive');if(!box){box=document.createElement('div');box.id='adminLive';box.className='adminSection';T('adminScreen').firstElementChild.appendChild(box)}
+ const [r,l]=await Promise.all([db.from('reports').select('id,listing_id,reason,listings(title)').eq('resolved',false).order('created_at',{ascending:false}).limit(50),db.from('listings').select('id,title,status,featured').neq('status','removed').order('created_at',{ascending:false}).limit(40)]);
+ box.innerHTML='<h3>Live moderation (protected by the database)</h3><h4>Open reports</h4>';
+ (r.data||[]).forEach(x=>{const d=document.createElement('div');d.className='adminListingRow';d.innerHTML=`<div><strong>${esc(x.listings?.title||'Listing')}</strong><small>${esc(x.reason)}</small></div><div class="adminActions"><button>Mark reviewed</button><button class="danger">Remove listing</button></div>`;const [a,b]=d.querySelectorAll('button');a.onclick=async()=>{await db.from('reports').update({resolved:true}).eq('id',x.id);loadAdmin()};b.onclick=async()=>{await db.from('listings').update({status:'removed'}).eq('id',x.listing_id);await db.from('reports').update({resolved:true}).eq('id',x.id);loadAdmin();loadLive()};box.appendChild(d)});
+ if(!(r.data||[]).length)box.insertAdjacentHTML('beforeend','<p class="sub">No open reports.</p>');
+ box.insertAdjacentHTML('beforeend','<h4>Recent listings</h4>');
+ (l.data||[]).forEach(x=>{const d=document.createElement('div');d.className='adminListingRow';d.innerHTML=`<div><strong>${esc(x.title)}</strong><small>${esc(x.status)}${x.featured?' · ⭐ featured':''}</small></div><div class="adminActions"><button>${x.featured?'Unfeature':'Feature'}</button><button class="danger">Remove</button></div>`;const [a,b]=d.querySelectorAll('button');a.onclick=async()=>{await db.from('listings').update({featured:!x.featured}).eq('id',x.id);loadAdmin();loadLive()};b.onclick=async()=>{if(confirm('Remove this listing?')){await db.from('listings').update({status:'removed'}).eq('id',x.id);loadAdmin();loadLive()}};box.appendChild(d)})}
+window.goScreen=(gs=>n=>{if(n==='admin'&&!isAdmin){toast('Admin access only. Sign in with an admin account.');n='home'}gs(n);if(n==='admin')loadAdmin();if(n==='orders')loadOrders(false);if(n==='myListings')loadMine();tr()})(window.goScreen);
+['hashchange','popstate'].forEach(e=>addEventListener(e,()=>{if(location.hash==='#admin'&&!isAdmin){toast('Admin access only.');goScreen('home')}}));
+if(location.hash==='#admin')goScreen('home');
+
+/* ---- password reset / resend verification ---- */
+async function forgot(){const e=T('mmEmail').value.trim();if(!db)return toast('Not connected yet.');if(!e)return toast('Enter your email first.');const {error}=await db.auth.resetPasswordForEmail(e,{redirectTo:location.origin+location.pathname});toast(error?error.message:'Password reset email sent.')}
+async function resend(){const e=T('mmEmail').value.trim();if(!db)return toast('Not connected yet.');if(!e)return toast('Enter your email first.');const {error}=await db.auth.resend({type:'signup',email:e});toast(error?error.message:'Verification email sent.')}
+function recover(){const p=prompt('Enter your new password (8+ characters):');if(p&&p.length>=8)db.auth.updateUser({password:p}).then(({error})=>toast(error?error.message:'Password updated.'));else toast('Password must be 8+ characters.')}
+
+/* ---- fuller Urdu translation ---- */
+const UR={'Home':'ہوم','Search':'تلاش','Notifications':'اطلاعات','My listings':'میرے اشتہارات','Orders':'آرڈرز','Admin':'ایڈمن','Safety & Policies':'حفاظت اور پالیسیاں','Account':'اکاؤنٹ','Sell an item':'چیز فروخت کریں','Explore marketplace':'مارکیٹ دیکھیں','Search listings':'اشتہارات تلاش کریں','Categories':'اقسام','Browse all listings':'تمام اشتہارات','Alerts / Notifications':'اطلاعات','How it works':'طریقہ کار','Database connection':'اکاؤنٹ','All categories':'تمام اقسام','Electronics':'الیکٹرانکس','Home & Furniture':'گھر اور فرنیچر','Fashion':'فیشن','Books & Study':'کتابیں','Sports & Hobbies':'کھیل اور مشغلے','Vehicles':'گاڑیاں','Other':'دیگر','Recommended':'تجویز کردہ','Price: low to high':'قیمت: کم سے زیادہ','Price: high to low':'قیمت: زیادہ سے کم','Clear search':'تلاش صاف کریں','Request to buy':'خریدنے کی درخواست','View details':'تفصیل دیکھیں','Share':'شیئر','Report':'رپورٹ','Contact':'رابطہ','Edit listing':'ترمیم','Delete listing':'حذف کریں','Edit':'ترمیم','Delete':'حذف','Mark sold':'فروخت شدہ','Relist':'دوبارہ لگائیں','Renew 60 days':'60 دن بڑھائیں','Load more':'مزید دیکھیں','Enable browser notifications':'براؤزر اطلاعات فعال کریں','Mark all as read':'سب پڑھ لیا','Clear notifications':'اطلاعات صاف کریں','Add a listing':'اشتہار شامل کریں','Refresh':'تازہ کریں','Total requests':'کل درخواستیں','Pending requests':'زیر التوا درخواستیں','Estimated commission':'تخمینی کمیشن','Update status':'حالت تبدیل کریں','Contact buyer':'خریدار سے رابطہ','Reported listings':'رپورٹ شدہ اشتہارات','Admin panel':'ایڈمن پینل','Orders & buyer requests':'آرڈرز اور خریدار کی درخواستیں','Live order requests':'لائیو آرڈر درخواستیں','Your live listings':'آپ کے لائیو اشتہارات','Safe buying and selling':'محفوظ خرید و فروخت','How to report a problem':'مسئلہ کیسے رپورٹ کریں','About & contact':'تعارف اور رابطہ','Browse listings':'اشتہارات دیکھیں','Sign in':'سائن اِن','Create account':'اکاؤنٹ بنائیں','Sign out':'سائن آؤٹ','Forgot password?':'پاس ورڈ بھول گئے؟','Resend verification email':'تصدیقی ای میل دوبارہ بھیجیں','Recently viewed':'حال ہی میں دیکھے گئے','Clear history':'تاریخ صاف کریں','Like new':'بالکل نیا جیسا','Good':'اچھی','Fair':'ٹھیک ٹھاک','For parts / repair':'مرمت / پرزوں کے لیے','Live listing':'لائیو اشتہار','Demo example':'نمونہ','Sample listing':'نمونہ اشتہار','Your listing':'آپ کا اشتہار','Item details':'چیز کی تفصیل','Your account':'آپ کا اکاؤنٹ','Notifications':'اطلاعات','Search the marketplace':'مارکیٹ پلیس میں تلاش کریں','Safety, privacy & marketplace rules':'حفاظت، رازداری اور مارکیٹ کے اصول','Rate seller':'فروخت کنندہ کو ریٹ کریں'};
+const PH={'Try: phone, desk, books...':'مثلاً: فون، میز، کتابیں...','Min price (Rs)':'کم از کم قیمت','Max price (Rs)':'زیادہ سے زیادہ قیمت','Area e.g. Gulberg':'علاقہ مثلاً گلبرگ'};
+const seen=new WeakMap();
+function tr(){const ur=document.documentElement.lang==='ur',w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
+ while(n=w.nextNode()){const v=n.nodeValue;if(!v.trim()||/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName))continue;const s=seen.get(n);
+  if(ur){const m=v.match(/^([^A-Za-z]*)(.*?)(\s*)$/);if(m&&UR[m[2]]){const nv=m[1]+UR[m[2]]+m[3];seen.set(n,{en:v,ur:nv});n.nodeValue=nv}}
+  else if(s&&v===s.ur)n.nodeValue=s.en}
+ document.querySelectorAll('[placeholder]').forEach(e=>{const k=e.dataset.phEn||e.getAttribute('placeholder');if(PH[k]){e.dataset.phEn=k;e.placeholder=ur?PH[k]:k}})}
+let tt;new MutationObserver(()=>{clearTimeout(tt);tt=setTimeout(tr,150)}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(tr).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+renderProducts();
+})();
+</script>
+
+</body></html>
