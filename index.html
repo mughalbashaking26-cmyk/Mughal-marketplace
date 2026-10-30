@@ -736,4 +736,35 @@ renderProducts();
 })();
 </script>
 
-</body></html>
+</body></html><!-- Supabase JS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  // Supabase Configuration
+  const SUPABASE_URL = "https://hgxzcjmkybdjucurlkya.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_IboQexlWTVnAh4ER_BN0ow_ps5ankZG";
+  
+  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // Function to insert product into database
+  async function saveAdToSupabase(title, price, description, category, imageUrl) {
+    const { data, error } = await supabase
+      .from('listings')
+      .insert([
+        { 
+          title: title, 
+          price: price, 
+          description: description,
+          category: category,
+          image_url: imageUrl
+        }
+      ]);
+
+    if (error) {
+      console.error("Error saving ad:", error);
+    } else {
+      console.log("Ad saved successfully:", data);
+    }
+  }
+</script>
+
